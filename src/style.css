@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "Dota";
+    src: url("./fonts/dota.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Dancing";
+    src: url("./fonts/dancing.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Nunito";
+    src: url("./fonts/nunito.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+
+
+.bg-black, .bg-white, .text-black, .text-white, .fill-black, .fill-white {
+    transition: all 0.3s ease;  /* Add a smooth transition for all properties */
+}
