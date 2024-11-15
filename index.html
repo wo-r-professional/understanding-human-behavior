@@ -37,8 +37,9 @@
         <link rel="stylesheet" href="./src/style.css">
     </head>
     <body class="relative min-h-screen box-border font-nunito bg-white text-black">
+        <!--navbar-->
         <div class="bg-black w-full text-white flex flex-col select-none">
-            <div class="container mx-auto px-36 flex flex-row justify-between items-center">
+            <div class="container mx-auto px-22 xl:px-36 flex flex-row justify-between items-center">
                 <a class="w-full py-3 text-3xl font-dancing font-black">Wo-r Aritcles</a>
                 <div class="flex flex-row items-center">
                     <div class="px-4 py-3 border-r border-opacity-40 border-gray-400 text-sm">
@@ -54,7 +55,7 @@
                 </div>
             </div>
             <div class="w-full border-b border-opacity-40 border-gray-400"></div>
-            <div class="container mx-auto px-36 flex flex-row justify-between items-center">
+            <div class="container mx-auto px-22 xl:px-36 flex flex-row justify-between items-center">
                 <div class="flex flex-row items-center">
                     <div class="flex flex-row gap-4 border-r border-opacity-40 border-gray-400 pr-4 pb-1 text-sm">
                         <div class="dropdown flex flex-row gap-1 group hover:cursor-pointer relative">
@@ -127,9 +128,9 @@
             </div>
             <div class="w-full border-b-[10px] border-yellow-500"></div>
         </div>
-
-
-        <div class="container mx-auto px-36">
+        <!---->
+        <div class="container mx-auto px-22 xl:px-36">
+            <!--breadcrumbs-->
             <div class="flex flex-row gap-1 mt-5">
                 <a class="underline transition-all hover:text-yellow-500 text-black cursor-pointer">wo-r articles</a>
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-[20] -rotate-90 fill-black" viewBox="0 -960 960 960">
@@ -141,27 +142,31 @@
                 </svg>
                 <a>article</a>
             </div>
+            <!--written date-->
             <div class="mt-14 flex flex-row">
                 <div class="pr-4 border-r border-black font-black">BLOGS</div>
                 <div class="pl-4">November 14th 2024</div>
             </div>
+            <!--title of article-->
             <div class="text-6xl font-black text-black mt-10">Exploring Lifespan Development, Learning Theories, Memory, and Intelligence: A Three-Week Research Journey</div>
+            <!--description of article-->
             <div class="flex flex-row items-center gap-5 mt-5">
                 <div>
                     <img class="w-24 rounded-full" src="./src/res/author.jpg">
                 </div>
                 <span class="text-2xl font-black w-[800px]">This blog attempts to teach you about human behavior through research and through pesonal experiences from me.</span>
             </div>
+            <!--author of article & like/dislike/email/share-->
             <div class="mt-10 flex flex-row">
                 <div class="flex flex-col gap-2">
                     <span>By <a class="underline hover:decoration-4 transition-all text-yellow-500 cursor-pointer">Braden Wood</a></span>
                     <div class="flex flex-row gap-3">
-                        <div class="px-[10] pb-[10.5px] pt-2 rounded-full border-2 border-yellow-500 flex flex-row items-center cursor-pointer">
+                        <div id="like-article" class="px-[10] pb-[10.5px] transition-all pt-2 rounded-full border-2 border-yellow-500 flex flex-row items-center cursor-pointer">
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-[20] fill-yellow-500" viewBox="0 -960 960 960">
                                 <path xmlns="http://www.w3.org/2000/svg" d="M821-625q53 0 94.5 41.8T957-489v22.44q0 8.86-2 20.1-2 11.25-6 19.46L819-120q-13 32-46.79 54T701-44H415q-57 0-96.5-38.8T279-180v-388q0-28.19 9.92-52.68Q298.83-645.16 319-665l144-145q29-29 66.5-38t71.5 6q32 15 46 50t4 76l-25 91h195ZM108.75-44Q73-44 47-69.79 21-95.59 21-132v-404q0-36.83 24.92-62.91Q70.83-625 106.42-625h4Q147-625 173-598.91q26 26.08 26 62.91v404q0 36.41-26.16 62.21Q146.68-44 109.75-44h-1Z"/>
                             </svg>
                         </div>
-                        <div class="px-[10] pt-[10.5px] pb-2 rounded-full border-2 border-yellow-500 flex flex-row items-center cursor-pointer">
+                        <div id="dislike-article" class="px-[10] pt-[10.5px] transition-all pb-2 rounded-full border-2 border-yellow-500 flex flex-row items-center cursor-pointer">
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-[20] fill-yellow-500" viewBox="0 -960 960 960">
                                 <path xmlns="http://www.w3.org/2000/svg" d="M139-335q-53 0-94.5-41.8T3-471v-22.44q0-8.86 2-20.1 2-11.25 6-19.46l130-307q13-32 46.79-54T259-916h286q57 0 96.5 38.8T681-780v388q0 28.19-9.92 52.68Q661.17-314.84 641-295L497-150q-29 29-66.5 38t-71.5-6q-32-15-46-50t-4-76l25-91H139Zm712.25-581Q887-916 913-890.21q26 25.8 26 62.21v404q0 36.82-24.92 62.91Q889.17-335 853.58-335h-4Q813-335 787-361.09T761-424v-404q0-36.41 26.16-62.21Q813.32-916 850.25-916h1Z"/>
                             </svg>
@@ -180,7 +185,7 @@
                 </div>
             </div>
             <!--MAIN CONTENT-->
-            <div class="mt-12 flex flex-col gap-5 font-medium">
+            <div id="main" class="mt-12 flex flex-col gap-5 font-medium">
                 <p>Understanding human behavior and cognition requires examining how individuals grow, learn, remember, and demonstrate intelligence over time. This three-week project immerses you in the fascinating world of psychology, where you'll explore key concepts in lifespan development, learning theories, memory, and intelligence. By diving deep into these topics, you'll uncover how they shape human interactions, behaviors, and thought processes.</p>
                 <p>Here, we'll break down the critical questions explored during the project and share key insights from the research. Through creative and original presentations, this project invites you to engage with these complex ideas in new and engaging ways.</p>
                 <ol class="list-decimal ml-5">
@@ -207,34 +212,16 @@
                         <span class="font-black">What Are the Various Methods of Conditioning and How Do Learning Theories Evaluate These Methods?</span>
                         <p class="mt-2">Learning theories offer valuable insights into how individuals acquire new behaviors and information. They include various methods of conditioning, each of which highlights a different aspect of how we learn:</p>
                         <ol class="list-disc ml-5 mt-2 flex flex-col gap-2">
-                            <li class="mb-5 flex flex-row gap-10">
-                                <div class="w-[500px]">
-                                    <span class="font-black">Classical Conditioning:</span> Popularized by Ivan Pavlov, classical conditioning occurs when a neutral stimulus becomes associated with a meaningful stimulus, eventually eliciting the same response. For example, Pavlov's famous experiment with dogs demonstrated how they could be conditioned to salivate at the sound of a bell if the bell was repeatedly paired with food.
-                                </div>
-                                <video class="slide-in-top bg-white h-[14rem]" width="500rem" height="200rem" controls>
-                                    <source src="./src/res/pav-dogs-experiement.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
+                            <li>
+                                <span class="font-black">Classical Conditioning:</span> Popularized by Ivan Pavlov, classical conditioning occurs when a neutral stimulus becomes associated with a meaningful stimulus, eventually eliciting the same response. For example, Pavlov's famous experiment with dogs demonstrated how they could be conditioned to salivate at the sound of a bell if the bell was repeatedly paired with food.
                             </li>
-                            <li class="mb-5 flex flex-row gap-10">
-                                <div class="w-[500px]">
-                                    <span class="font-black">Operant Conditioning:</span> Developed by B.F. Skinner, operant conditioning focuses on how behavior is shaped by reinforcement (positive or negative) and punishment. For instance, an animal might learn to press a lever for food (positive reinforcement) or avoid a behavior that leads to an unpleasant consequence (punishment).
-                                </div>
-                                <video class="slide-in-top bg-white h-[14rem]" width="500rem" height="200rem" controls>
-                                    <source src="./src/res/skinners-box-experiement.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
+                            <li>
+                                <span class="font-black">Operant Conditioning:</span> Developed by B.F. Skinner, operant conditioning focuses on how behavior is shaped by reinforcement (positive or negative) and punishment. For instance, an animal might learn to press a lever for food (positive reinforcement) or avoid a behavior that leads to an unpleasant consequence (punishment).
                             </li>
-                            <li class="mb-5 flex flex-row gap-10">
-                                <div class="w-[500px]">
-                                    <span class="font-black">Observational Learning:</span> Proposed by Albert Bandura, this theory suggests that we learn by observing others. By paying attention, remembering what we observe, and then replicating the behavior, individuals learn skills and behaviors that help them navigate the social world. This type of learning is central to socialization and personal development.
-                                </div>
-                                <video class="slide-in-top bg-white h-[14rem]" width="500rem" height="200rem" controls>
-                                    <source src="./src/res/banduras-doll-experiement.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
+                            <li>
+                                <span class="font-black">Observational Learning:</span> Proposed by Albert Bandura, this theory suggests that we learn by observing others. By paying attention, remembering what we observe, and then replicating the behavior, individuals learn skills and behaviors that help them navigate the social world. This type of learning is central to socialization and personal development.
                             </li>
-                        </ol>
+                        </ol>                           
                     </li>
                     <p class="my-5">Each of these theories plays a significant role in understanding how people change their behavior, whether in educational settings, therapy, or everyday life. Evaluating these methods allows us to better understand their strengths and limitations, as well as their applications in different contexts.</p>
                     <li>
@@ -328,10 +315,10 @@
                     * TODO CLEAN SITE AFTER ALL ELSE IS DONE
                 -->
             </div>
+            <!--END OF MAIN CONTENT-->
             <div class="mt-20"></div>
         </div>
-
-        
+        <!--chip overlay for light/dark mode, settings, and my github link-->
         <div class="py-2 px-[7px] w-fit bg-black flex flex-col gap-[5px] justify-between items-center rounded-[15px] fixed right-2 bottom-2 text-white shadow-xl select-none">
             <a id="light-or-dark" class="cursor-pointer">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-[30px] fill-white" viewBox="0 -960 960 960">

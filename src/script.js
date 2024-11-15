@@ -91,3 +91,63 @@
         }
     })
 }
+
+/** Manages the like/dislike buttons on the page */
+{
+    if (localStorage.getItem("like-dislike") == null)
+        localStorage.setItem("like-dislike", "undecided")
+
+    if (localStorage.getItem("like-dislike") == "like") {
+        $("#like-article").addClass("bg-green-600")
+    } else if (localStorage.getItem("like-dislike") == "dislike") {
+        $("#dislike-article").addClass("bg-red-600")
+    }
+
+    $("#like-article").click(async function () {
+        if ($("#dislike-article").hasClass("bg-red-600"))
+            $("#dislike-article").removeClass("bg-red-600");
+        
+        $(this).addClass("bg-green-600")
+        localStorage.setItem("like-dislike", "like")
+    })
+
+    $("#dislike-article").click(async function () {
+        if ($("#like-article").hasClass("bg-green-600"))
+            $("#like-article").removeClass("bg-green-600");
+
+        $(this).addClass("bg-red-600")
+        localStorage.setItem("like-dislike", "dislike")
+    })
+}
+
+/** Makes things fade in if you scroll to it */
+{
+    $("#main p, #main li, #main h1, #main h2").each(async function () {
+        $(this).addClass("fade-in")
+    })
+
+    // Select all fade-in elements and add the necessary classes for opacity transition
+    $(".fade-in").addClass("opacity-0 transition-opacity duration-1000 ease-in-out");
+
+    // Use IntersectionObserver to detect when an element is in the viewport
+    const observerOptions = {
+      root: null, // Observe within the viewport
+      rootMargin: "0px",
+      threshold: 0.1, // Trigger when 10% of the element is visible
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+            // When the element is in view, fade it in by adding opacity-100
+                $(entry.target).addClass("opacity-100");
+                observer.unobserve(entry.target); // Stop observing the element after it fades in
+            }
+        });
+    }, observerOptions);
+
+    // Start observing each fade-in element
+    $(".fade-in").each(function() {
+      observer.observe(this);
+    });
+}
