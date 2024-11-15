@@ -21,6 +21,13 @@
 
 
 
+::selection {
+    background: rgb(234 179 8 / 1);
+    color: black;
+}
+
+
+
 ::-webkit-scrollbar {
     width: 0px;
     height: 0px;
@@ -36,6 +43,6 @@
 
 
 
-.bg-black, .bg-white, .text-black, .text-white, .fill-black, .fill-white {
+.bg-black, .bg-white, .text-black, .text-white, .fill-black, .fill-white, .border-white, .border-black, .border-gray-400 {
     transition: all 0.3s ease;  /* Add a smooth transition for all properties */
 }
