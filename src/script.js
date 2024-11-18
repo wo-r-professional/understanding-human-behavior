@@ -151,3 +151,27 @@
       observer.observe(this);
     });
 }
+
+/** Find all headers from #main */
+{
+    $("#main h2, #main h3").each(async function () {
+        let target = $(this).text().trim().replace("\"", "").replace(" ", "-").replace("\"", "").replace(" ", "-").replace("\"", "").replace(" ", "-").replace("\"", "").replace(" ", "-").replace("\"", "").replace(" ", "-").replace("\"", "").replace(" ", "-").replace("\"", "").replace(" ", "-").replace("\"", "").replace(" ", "-").replace("\"", "").replace(" ", "-").replace("\"", "").replace(" ", "-").replace("\"", "").replace(" ", "-").replace("\"", "").replace(" ", "-").replace("\"", "").replace(" ", "-").replace("\"", "").replace(" ", "-").replace("\"", "").replace(" ", "-").toLowerCase()
+        $(this).attr("id", target)
+
+        console.log($(this)[0].outerHTML.includes("h3"))
+
+        if (!$(this)[0].outerHTML.includes("h3")) {
+            $("#table-of-contents").append(`
+                
+                <li>- <a href="#${target}" class="font-black text-[10px] text-yellow-500 underline underline-offset-[2px] decoration-1 hover:decoration-2 transition-all">${$(this).text()}</a></li>
+                
+            `)
+        } else {
+            $("#table-of-contents").append(`
+                
+                <li><span class="font-black ml-7 select-none">- </span><a href="#${target}" class="font-black text-[10px] text-yellow-500 underline underline-offset-[2px] decoration-1 hover:decoration-2 transition-all">${$(this).text()}</a></li>
+                
+            `)
+        }
+    })
+}

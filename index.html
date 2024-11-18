@@ -1,144 +1,189 @@
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Wo-r Articles: Exploring Lifespan Development, Learning Theories, Memory, and Intelligence: A Three-Week Research Journey</title>
-        <link rel="icon" href="https://avatars.githubusercontent.com/u/78428114">
-        <link rel="icon" href="./src/logo/logo.png">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <!---->
-        <meta name="robots" content="index, follow">
-        <meta name="language" content="English">
-        <meta name="author" content="Wo-r">
-        <!---->
-        <script src="./src/third/jquery.min.js"></script>
-        <script src="./src/third/tailwind.min.js"></script>
-        <script>
-            tailwind.config = {
-                theme: {
-                    extend: {
-                        fontFamily: {
-                            nunito: ["Nunito", "sans-serif"],
-                            dota: ["Dota", "sans-serif"],
-                            dancing: ["Dancing", "sans-serif"]
-                        },
-                        colors: {
-                            "brown": "#494327",
-                            "brown-dark":"#0a0a08",
-                            "brown-darker":"#030302",
-                            "brown-light": "#766a37",
-                            "brown-accent": "#968613"
-                        },
-                    }
+
+<head>
+    <meta charset="utf-8">
+    <title>Wo-r Articles: Exploring Lifespan Development, Learning Theories, Memory, and Intelligence: A Three-Week
+        Research Journey</title>
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/78428114">
+    <link rel="icon" href="./src/logo/logo.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!---->
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="author" content="Wo-r">
+    <!---->
+    <script src="./src/third/jquery.min.js"></script>
+    <script src="./src/third/tailwind.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        nunito: ["Nunito", "sans-serif"],
+                        dota: ["Dota", "sans-serif"],
+                        dancing: ["Dancing", "sans-serif"]
+                    },
+                    colors: {
+                        "brown": "#494327",
+                        "brown-dark": "#0a0a08",
+                        "brown-darker": "#030302",
+                        "brown-light": "#766a37",
+                        "brown-accent": "#968613"
+                    },
                 }
             }
-        </script>
-        <link rel="stylesheet" href="./src/style.css">
-    </head>
-    <body class="relative min-h-screen box-border font-nunito bg-white text-black">
-        <!--navbar-->
-        <div class="bg-black w-full text-white flex flex-col select-none">
-            <div class="container mx-auto px-22 xl:px-36 flex flex-row justify-between items-center">
-                <a class="w-full py-3 text-3xl font-dancing font-black">Wo-r Aritcles</a>
-                <div class="flex flex-row items-center">
-                    <div class="px-4 py-3 border-r border-opacity-40 border-gray-400 text-sm">
-                        <a class="w-full font-black underline underline-offset-[5px] group decoration-2 cursor-pointer transition-all hover:text-yellow-500">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-[22] group-hover:fill-yellow-500 my-1 fill-white" viewBox="0 -960 960 960">
-                                <path xmlns="http://www.w3.org/2000/svg" d="M371-289q-121.71 0-206.86-85.2Q79-459.41 79-581.2 79-703 164.2-788q85.21-85 207-85Q493-873 578-787.86q85 85.15 85 206.86 0 47-11.5 85T620-429l214 215q19 20 19 47.48 0 27.48-20 47.52-19.8 19-47.4 19-27.6 0-47.6-19L526.47-332Q497-313 457-301t-86 12Zm-.41-136q66.59 0 111.5-44.5T527-580.59q0-66.59-44.91-111.5T370.59-737Q304-737 259.5-692.09T215-580.59q0 66.59 44.5 111.09T370.59-425Z"/>
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="pl-4 w-[60px] py-3 text-sm">
-                        <a class="w-full py-3 font-black underline underline-offset-[5px] decoration-2 cursor-pointer transition-all hover:text-yellow-500">Log in</a>
-                    </div>
+        }
+    </script>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body class="relative min-h-screen box-border font-nunito bg-white text-black scroll-smooth overscroll-contain">
+    <!--navbar-->
+    <div class="bg-black w-full text-white flex flex-col select-none">
+        <div class="container mx-auto px-22 xl:px-36 flex flex-row justify-between items-center">
+            <a class="w-full py-3 text-3xl font-dancing font-black">Wo-r Aritcles</a>
+            <div class="flex flex-row items-center">
+                <div class="px-4 py-3 border-r border-opacity-40 border-gray-400 text-sm">
+                    <a
+                        class="w-full font-black underline underline-offset-[5px] group decoration-2 cursor-pointer transition-all hover:text-yellow-500">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="w-[22] group-hover:fill-yellow-500 my-1 fill-white" viewBox="0 -960 960 960">
+                            <path xmlns="http://www.w3.org/2000/svg"
+                                d="M371-289q-121.71 0-206.86-85.2Q79-459.41 79-581.2 79-703 164.2-788q85.21-85 207-85Q493-873 578-787.86q85 85.15 85 206.86 0 47-11.5 85T620-429l214 215q19 20 19 47.48 0 27.48-20 47.52-19.8 19-47.4 19-27.6 0-47.6-19L526.47-332Q497-313 457-301t-86 12Zm-.41-136q66.59 0 111.5-44.5T527-580.59q0-66.59-44.91-111.5T370.59-737Q304-737 259.5-692.09T215-580.59q0 66.59 44.5 111.09T370.59-425Z" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="pl-4 w-[60px] py-3 text-sm">
+                    <a
+                        class="w-full py-3 font-black underline underline-offset-[5px] decoration-2 cursor-pointer transition-all hover:text-yellow-500">Log
+                        in</a>
                 </div>
             </div>
-            <div class="w-full border-b border-opacity-40 border-gray-400"></div>
-            <div class="container mx-auto px-22 xl:px-36 flex flex-row justify-between items-center">
-                <div class="flex flex-row items-center">
-                    <div class="flex flex-row gap-4 border-r border-opacity-40 border-gray-400 pr-4 pb-1 text-sm">
-                        <div class="dropdown flex flex-row gap-1 group hover:cursor-pointer relative">
-                            <a class="w-full py-3 font-black underline underline-offset-[5px] decoration-2 transition-all group-hover:text-yellow-500 group-hover:cursor-pointer relative">
-                                Explore articles
-                            </a>
-                            <div class="dropdown-inner z-20 bg-white p-4 group-hover:cursor-default absolute top-10 h-fit w-[140px] shadow-xl hidden">
-                                <div class="flex flex-col gap-2">
-                                    <a class="font-black underline underline-offset-[5px] decoration-2 transition-all hover:text-yellow-500 text-black cursor-pointer">Research articles</a>
-                                    <a class="font-black underline underline-offset-[5px] decoration-2 transition-all hover:text-yellow-500 text-black cursor-pointer">News</a>
-                                    <a class="font-black underline underline-offset-[5px] decoration-2 transition-all hover:text-yellow-500 text-black cursor-pointer">Blogs</a>
-                                    <a class="font-black underline underline-offset-[5px] decoration-2 transition-all hover:text-yellow-500 text-black cursor-pointer">Opinions</a>
-                                    <a class="font-black underline underline-offset-[5px] decoration-2 transition-all hover:text-yellow-500 text-black cursor-pointer">Books & Culture</a>
-                                </div>
-                            </div>
-                            <div class="flex justify-between items-center mt-1">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="w-[20] fill-white" viewBox="0 -960 960 960">
-                                    <path xmlns="http://www.w3.org/2000/svg" d="M480.44-333q-13.44 0-26.04-5.55-12.6-5.54-22.4-15.45L247-538q-19-19.8-19-47.4 0-27.6 19.5-47.6t47.5-20q28 0 47 20l138 138 138-138q20.04-20 48.02-20 27.98 0 47.48 20 19.5 20 19.5 47.6T713-538L529-354q-9.83 9.91-22.47 15.45-12.64 5.55-26.09 5.55Z"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="dropdown flex flex-row gap-1 group hover:cursor-pointer relative">
-                            <a class="w-full py-3 font-black underline underline-offset-[5px] decoration-2 transition-all group-hover:text-yellow-500 group-hover:cursor-pointer relative">
-                                About our team
-                            </a>
-                            <div class="dropdown-inner z-20 bg-white p-4 group-hover:cursor-default absolute top-10 h-fit w-[140px] shadow-xl hidden">
-                                <div class="flex flex-col gap-2">
-                                    <a class="font-black underline underline-offset-[5px] decoration-2 transition-all hover:text-yellow-500 text-black cursor-pointer">Owner of the site</a>
-                                    <a class="font-black underline underline-offset-[5px] decoration-2 transition-all hover:text-yellow-500 text-black cursor-pointer">All current editors</a>
-                                    <a class="font-black underline underline-offset-[5px] decoration-2 transition-all hover:text-yellow-500 text-black cursor-pointer">Our publishing models</a>
-                                    <a class="font-black underline underline-offset-[5px] decoration-2 transition-all hover:text-yellow-500 text-black cursor-pointer">Awards</a>
-                                    <a class="font-black underline underline-offset-[5px] decoration-2 transition-all hover:text-yellow-500 text-black cursor-pointer">Send a news tip</a>
-                                </div>
-                            </div>
-                            <div class="flex justify-between items-center mt-1">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="w-[20] fill-white" viewBox="0 -960 960 960">
-                                    <path xmlns="http://www.w3.org/2000/svg" d="M480.44-333q-13.44 0-26.04-5.55-12.6-5.54-22.4-15.45L247-538q-19-19.8-19-47.4 0-27.6 19.5-47.6t47.5-20q28 0 47 20l138 138 138-138q20.04-20 48.02-20 27.98 0 47.48 20 19.5 20 19.5 47.6T713-538L529-354q-9.83 9.91-22.47 15.45-12.64 5.55-26.09 5.55Z"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="dropdown flex flex-row gap-1 group hover:cursor-pointer relative">
-                            <a class="w-full py-3 font-black underline underline-offset-[5px] decoration-2 transition-all group-hover:text-yellow-500 group-hover:cursor-pointer relative">
-                                Publish with us
-                            </a>
-                            <div class="dropdown-inner z-20 bg-white p-4 group-hover:cursor-default absolute top-10 h-fit w-[140px] shadow-xl hidden">
-                                <div class="flex flex-col gap-2">
-                                    <a class="font-black underline underline-offset-[5px] decoration-2 transition-all hover:text-yellow-500 text-black cursor-pointer">For Authors</a>
-                                    <a class="font-black underline underline-offset-[5px] decoration-2 transition-all hover:text-yellow-500 text-black cursor-pointer">For Referees</a>
-                                </div>
-                            </div>
-                            <div class="flex justify-between items-center mt-1">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="w-[20] fill-white" viewBox="0 -960 960 960">
-                                    <path xmlns="http://www.w3.org/2000/svg" d="M480.44-333q-13.44 0-26.04-5.55-12.6-5.54-22.4-15.45L247-538q-19-19.8-19-47.4 0-27.6 19.5-47.6t47.5-20q28 0 47 20l138 138 138-138q20.04-20 48.02-20 27.98 0 47.48 20 19.5 20 19.5 47.6T713-538L529-354q-9.83 9.91-22.47 15.45-12.64 5.55-26.09 5.55Z"/>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pl-4 text-sm">
-                        <a class="w-full py-3 font-black underline underline-offset-[5px] decoration-2 cursor-pointer transition-all hover:text-yellow-500">Subscribe</a>
-                    </div>
-                </div>
-                <div class="flex flex-row items-center">
-                    <div class="pr-4 py-3 border-r border-opacity-40 border-gray-400 text-sm">
-                        <a class="w-full py-3 font-black underline underline-offset-[5px] decoration-2 cursor-pointer transition-all hover:text-yellow-500">Sign up for alerts</a>
-                    </div>
-                    <div class="pl-4 text-sm">
-                        <a class="w-full py-3 font-black underline underline-offset-[5px] decoration-2 cursor-pointer transition-all hover:text-yellow-500">RSS feed</a>
-                    </div>
-                </div>
-            </div>
-            <div class="w-full border-b-[10px] border-yellow-500"></div>
         </div>
-        <!---->
-        <div class="container mx-auto px-22 xl:px-36">
+        <div class="w-full border-b border-opacity-40 border-gray-400"></div>
+        <div class="container mx-auto px-22 xl:px-36 flex flex-row justify-between items-center">
+            <div class="flex flex-row items-center">
+                <div class="flex flex-row gap-4 border-r border-opacity-40 border-gray-400 pr-4 pb-1 text-sm">
+                    <div class="dropdown flex flex-row gap-1 group hover:cursor-pointer relative">
+                        <a
+                            class="w-full py-3 font-black underline underline-offset-[5px] decoration-2 transition-all group-hover:text-yellow-500 group-hover:cursor-pointer relative">
+                            Explore articles
+                        </a>
+                        <div
+                            class="dropdown-inner z-20 bg-white p-4 group-hover:cursor-default absolute top-10 h-fit w-[140px] shadow-xl hidden">
+                            <div class="flex flex-col gap-2">
+                                <a
+                                    class="font-black underline underline-offset-[5px] decoration-2 transition-all hover:text-yellow-500 text-black cursor-pointer">Research
+                                    articles</a>
+                                <a
+                                    class="font-black underline underline-offset-[5px] decoration-2 transition-all hover:text-yellow-500 text-black cursor-pointer">News</a>
+                                <a
+                                    class="font-black underline underline-offset-[5px] decoration-2 transition-all hover:text-yellow-500 text-black cursor-pointer">Blogs</a>
+                                <a
+                                    class="font-black underline underline-offset-[5px] decoration-2 transition-all hover:text-yellow-500 text-black cursor-pointer">Opinions</a>
+                                <a
+                                    class="font-black underline underline-offset-[5px] decoration-2 transition-all hover:text-yellow-500 text-black cursor-pointer">Books
+                                    & Culture</a>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center mt-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-[20] fill-white" viewBox="0 -960 960 960">
+                                <path xmlns="http://www.w3.org/2000/svg"
+                                    d="M480.44-333q-13.44 0-26.04-5.55-12.6-5.54-22.4-15.45L247-538q-19-19.8-19-47.4 0-27.6 19.5-47.6t47.5-20q28 0 47 20l138 138 138-138q20.04-20 48.02-20 27.98 0 47.48 20 19.5 20 19.5 47.6T713-538L529-354q-9.83 9.91-22.47 15.45-12.64 5.55-26.09 5.55Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="dropdown flex flex-row gap-1 group hover:cursor-pointer relative">
+                        <a
+                            class="w-full py-3 font-black underline underline-offset-[5px] decoration-2 transition-all group-hover:text-yellow-500 group-hover:cursor-pointer relative">
+                            About our team
+                        </a>
+                        <div
+                            class="dropdown-inner z-20 bg-white p-4 group-hover:cursor-default absolute top-10 h-fit w-[140px] shadow-xl hidden">
+                            <div class="flex flex-col gap-2">
+                                <a
+                                    class="font-black underline underline-offset-[5px] decoration-2 transition-all hover:text-yellow-500 text-black cursor-pointer">Owner
+                                    of the site</a>
+                                <a
+                                    class="font-black underline underline-offset-[5px] decoration-2 transition-all hover:text-yellow-500 text-black cursor-pointer">All
+                                    current editors</a>
+                                <a
+                                    class="font-black underline underline-offset-[5px] decoration-2 transition-all hover:text-yellow-500 text-black cursor-pointer">Our
+                                    publishing models</a>
+                                <a
+                                    class="font-black underline underline-offset-[5px] decoration-2 transition-all hover:text-yellow-500 text-black cursor-pointer">Awards</a>
+                                <a
+                                    class="font-black underline underline-offset-[5px] decoration-2 transition-all hover:text-yellow-500 text-black cursor-pointer">Send
+                                    a news tip</a>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center mt-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-[20] fill-white" viewBox="0 -960 960 960">
+                                <path xmlns="http://www.w3.org/2000/svg"
+                                    d="M480.44-333q-13.44 0-26.04-5.55-12.6-5.54-22.4-15.45L247-538q-19-19.8-19-47.4 0-27.6 19.5-47.6t47.5-20q28 0 47 20l138 138 138-138q20.04-20 48.02-20 27.98 0 47.48 20 19.5 20 19.5 47.6T713-538L529-354q-9.83 9.91-22.47 15.45-12.64 5.55-26.09 5.55Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="dropdown flex flex-row gap-1 group hover:cursor-pointer relative">
+                        <a
+                            class="w-full py-3 font-black underline underline-offset-[5px] decoration-2 transition-all group-hover:text-yellow-500 group-hover:cursor-pointer relative">
+                            Publish with us
+                        </a>
+                        <div
+                            class="dropdown-inner z-20 bg-white p-4 group-hover:cursor-default absolute top-10 h-fit w-[140px] shadow-xl hidden">
+                            <div class="flex flex-col gap-2">
+                                <a
+                                    class="font-black underline underline-offset-[5px] decoration-2 transition-all hover:text-yellow-500 text-black cursor-pointer">For
+                                    Authors</a>
+                                <a
+                                    class="font-black underline underline-offset-[5px] decoration-2 transition-all hover:text-yellow-500 text-black cursor-pointer">For
+                                    Referees</a>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center mt-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-[20] fill-white" viewBox="0 -960 960 960">
+                                <path xmlns="http://www.w3.org/2000/svg"
+                                    d="M480.44-333q-13.44 0-26.04-5.55-12.6-5.54-22.4-15.45L247-538q-19-19.8-19-47.4 0-27.6 19.5-47.6t47.5-20q28 0 47 20l138 138 138-138q20.04-20 48.02-20 27.98 0 47.48 20 19.5 20 19.5 47.6T713-538L529-354q-9.83 9.91-22.47 15.45-12.64 5.55-26.09 5.55Z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="pl-4 text-sm">
+                    <a
+                        class="w-full py-3 font-black underline underline-offset-[5px] decoration-2 cursor-pointer transition-all hover:text-yellow-500">Subscribe</a>
+                </div>
+            </div>
+            <div class="flex flex-row items-center">
+                <div class="pr-4 py-3 border-r border-opacity-40 border-gray-400 text-sm">
+                    <a
+                        class="w-full py-3 font-black underline underline-offset-[5px] decoration-2 cursor-pointer transition-all hover:text-yellow-500">Sign
+                        up for alerts</a>
+                </div>
+                <div class="pl-4 text-sm">
+                    <a
+                        class="w-full py-3 font-black underline underline-offset-[5px] decoration-2 cursor-pointer transition-all hover:text-yellow-500">RSS
+                        feed</a>
+                </div>
+            </div>
+        </div>
+        <div class="w-full border-b-[10px] border-yellow-500"></div>
+    </div>
+    <!---->
+    <div class="flex flex-row justify-between gap-10 container mx-auto px-22 xl:px-36">
+        <div class="container mx-auto px-22 xl:px-36 w-[80ch]">
             <!--breadcrumbs-->
             <div class="flex flex-row gap-1 mt-5">
                 <a class="underline transition-all hover:text-yellow-500 text-black cursor-pointer">wo-r articles</a>
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-[20] -rotate-90 fill-black" viewBox="0 -960 960 960">
-                    <path xmlns="http://www.w3.org/2000/svg" d="M480.44-333q-13.44 0-26.04-5.55-12.6-5.54-22.4-15.45L247-538q-19-19.8-19-47.4 0-27.6 19.5-47.6t47.5-20q28 0 47 20l138 138 138-138q20.04-20 48.02-20 27.98 0 47.48 20 19.5 20 19.5 47.6T713-538L529-354q-9.83 9.91-22.47 15.45-12.64 5.55-26.09 5.55Z"/>
+                    <path xmlns="http://www.w3.org/2000/svg"
+                        d="M480.44-333q-13.44 0-26.04-5.55-12.6-5.54-22.4-15.45L247-538q-19-19.8-19-47.4 0-27.6 19.5-47.6t47.5-20q28 0 47 20l138 138 138-138q20.04-20 48.02-20 27.98 0 47.48 20 19.5 20 19.5 47.6T713-538L529-354q-9.83 9.91-22.47 15.45-12.64 5.55-26.09 5.55Z" />
                 </svg>
                 <a class="underline transition-all hover:text-yellow-500 text-black cursor-pointer">blogs</a>
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-[20] -rotate-90 fill-black" viewBox="0 -960 960 960">
-                    <path xmlns="http://www.w3.org/2000/svg" d="M480.44-333q-13.44 0-26.04-5.55-12.6-5.54-22.4-15.45L247-538q-19-19.8-19-47.4 0-27.6 19.5-47.6t47.5-20q28 0 47 20l138 138 138-138q20.04-20 48.02-20 27.98 0 47.48 20 19.5 20 19.5 47.6T713-538L529-354q-9.83 9.91-22.47 15.45-12.64 5.55-26.09 5.55Z"/>
+                    <path xmlns="http://www.w3.org/2000/svg"
+                        d="M480.44-333q-13.44 0-26.04-5.55-12.6-5.54-22.4-15.45L247-538q-19-19.8-19-47.4 0-27.6 19.5-47.6t47.5-20q28 0 47 20l138 138 138-138q20.04-20 48.02-20 27.98 0 47.48 20 19.5 20 19.5 47.6T713-538L529-354q-9.83 9.91-22.47 15.45-12.64 5.55-26.09 5.55Z" />
                 </svg>
                 <a>article</a>
             </div>
@@ -148,37 +193,54 @@
                 <div class="pl-4">November 14th 2024</div>
             </div>
             <!--title of article-->
-            <div class="text-6xl font-black text-black mt-10">Exploring Lifespan Development, Learning Theories, Memory, and Intelligence: A Three-Week Research Journey</div>
+            <div class="text-6xl font-black text-black mt-10">Exploring Lifespan Development, Learning Theories, Memory,
+                and
+                Intelligence: A Three-Week Research Journey</div>
             <!--description of article-->
             <div class="flex flex-row items-center gap-5 mt-5">
                 <div>
                     <img class="w-24 rounded-full" src="./src/res/author.jpg">
                 </div>
-                <span class="text-2xl font-black w-[800px]">This blog attempts to teach you about human behavior through research and through pesonal experiences from me.</span>
+                <span class="text-2xl font-black w-[800px]">This blog attempts to teach you about human behavior through
+                    research and through pesonal experiences from me.</span>
             </div>
             <!--author of article & like/dislike/email/share-->
             <div class="mt-10 flex flex-row">
                 <div class="flex flex-col gap-2">
-                    <span>By <a class="underline hover:decoration-4 transition-all text-yellow-500 cursor-pointer">Braden Wood</a></span>
+                    <span>By <a
+                            class="underline decoration-1 hover:decoration-2 transition-all text-yellow-500 cursor-pointer">Braden
+                            Wood</a></span>
                     <div class="flex flex-row gap-3">
-                        <div id="like-article" class="px-[10] pb-[10.5px] transition-all pt-2 rounded-full border-2 border-yellow-500 flex flex-row items-center cursor-pointer">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-[20] fill-yellow-500" viewBox="0 -960 960 960">
-                                <path xmlns="http://www.w3.org/2000/svg" d="M821-625q53 0 94.5 41.8T957-489v22.44q0 8.86-2 20.1-2 11.25-6 19.46L819-120q-13 32-46.79 54T701-44H415q-57 0-96.5-38.8T279-180v-388q0-28.19 9.92-52.68Q298.83-645.16 319-665l144-145q29-29 66.5-38t71.5 6q32 15 46 50t4 76l-25 91h195ZM108.75-44Q73-44 47-69.79 21-95.59 21-132v-404q0-36.83 24.92-62.91Q70.83-625 106.42-625h4Q147-625 173-598.91q26 26.08 26 62.91v404q0 36.41-26.16 62.21Q146.68-44 109.75-44h-1Z"/>
+                        <div id="like-article"
+                            class="px-[10] pb-[10.5px] transition-all pt-2 rounded-full border-2 border-yellow-500 flex flex-row items-center cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-[20] fill-yellow-500"
+                                viewBox="0 -960 960 960">
+                                <path xmlns="http://www.w3.org/2000/svg"
+                                    d="M821-625q53 0 94.5 41.8T957-489v22.44q0 8.86-2 20.1-2 11.25-6 19.46L819-120q-13 32-46.79 54T701-44H415q-57 0-96.5-38.8T279-180v-388q0-28.19 9.92-52.68Q298.83-645.16 319-665l144-145q29-29 66.5-38t71.5 6q32 15 46 50t4 76l-25 91h195ZM108.75-44Q73-44 47-69.79 21-95.59 21-132v-404q0-36.83 24.92-62.91Q70.83-625 106.42-625h4Q147-625 173-598.91q26 26.08 26 62.91v404q0 36.41-26.16 62.21Q146.68-44 109.75-44h-1Z" />
                             </svg>
                         </div>
-                        <div id="dislike-article" class="px-[10] pt-[10.5px] transition-all pb-2 rounded-full border-2 border-yellow-500 flex flex-row items-center cursor-pointer">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-[20] fill-yellow-500" viewBox="0 -960 960 960">
-                                <path xmlns="http://www.w3.org/2000/svg" d="M139-335q-53 0-94.5-41.8T3-471v-22.44q0-8.86 2-20.1 2-11.25 6-19.46l130-307q13-32 46.79-54T259-916h286q57 0 96.5 38.8T681-780v388q0 28.19-9.92 52.68Q661.17-314.84 641-295L497-150q-29 29-66.5 38t-71.5-6q-32-15-46-50t-4-76l25-91H139Zm712.25-581Q887-916 913-890.21q26 25.8 26 62.21v404q0 36.82-24.92 62.91Q889.17-335 853.58-335h-4Q813-335 787-361.09T761-424v-404q0-36.41 26.16-62.21Q813.32-916 850.25-916h1Z"/>
+                        <div id="dislike-article"
+                            class="px-[10] pt-[10.5px] transition-all pb-2 rounded-full border-2 border-yellow-500 flex flex-row items-center cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-[20] fill-yellow-500"
+                                viewBox="0 -960 960 960">
+                                <path xmlns="http://www.w3.org/2000/svg"
+                                    d="M139-335q-53 0-94.5-41.8T3-471v-22.44q0-8.86 2-20.1 2-11.25 6-19.46l130-307q13-32 46.79-54T259-916h286q57 0 96.5 38.8T681-780v388q0 28.19-9.92 52.68Q661.17-314.84 641-295L497-150q-29 29-66.5 38t-71.5-6q-32-15-46-50t-4-76l25-91H139Zm712.25-581Q887-916 913-890.21q26 25.8 26 62.21v404q0 36.82-24.92 62.91Q889.17-335 853.58-335h-4Q813-335 787-361.09T761-424v-404q0-36.41 26.16-62.21Q813.32-916 850.25-916h1Z" />
                             </svg>
                         </div>
-                        <div class="px-[10] pb-[10.5px] pt-3 rounded-full border-2 border-yellow-500 flex flex-row items-center cursor-pointer">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-[20] fill-yellow-500" viewBox="0 -960 960 960">
-                                <path xmlns="http://www.w3.org/2000/svg" d="M170-114q-56.72 0-96.36-40.14Q34-194.27 34-250v-460q0-55.72 39.64-95.86T170-846h620q56.72 0 96.36 40.14T926-710v460q0 55.73-39.64 95.86Q846.72-114 790-114H170Zm310-287q10 0 18.38-2.5 8.37-2.5 17.62-8.5l251.11-163.08Q776-580 783-591.5q7-11.5 7-25.89 0-27.3-25.5-42.96Q739-676 713-659L480-508 247-659q-25-16-51-2t-26 44q0 15 7 26t16 16l251 163q9.25 6 17.63 8.5Q470-401 480-401Z"/>
+                        <div
+                            class="px-[10] pb-[10.5px] pt-3 rounded-full border-2 border-yellow-500 flex flex-row items-center cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-[20] fill-yellow-500"
+                                viewBox="0 -960 960 960">
+                                <path xmlns="http://www.w3.org/2000/svg"
+                                    d="M170-114q-56.72 0-96.36-40.14Q34-194.27 34-250v-460q0-55.72 39.64-95.86T170-846h620q56.72 0 96.36 40.14T926-710v460q0 55.73-39.64 95.86Q846.72-114 790-114H170Zm310-287q10 0 18.38-2.5 8.37-2.5 17.62-8.5l251.11-163.08Q776-580 783-591.5q7-11.5 7-25.89 0-27.3-25.5-42.96Q739-676 713-659L480-508 247-659q-25-16-51-2t-26 44q0 15 7 26t16 16l251 163q9.25 6 17.63 8.5Q470-401 480-401Z" />
                             </svg>
                         </div>
-                        <div class="px-[10] pb-[10.5px] pt-3 rounded-full border-2 border-yellow-500 flex flex-row items-center cursor-pointer">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-[20] fill-yellow-500" viewBox="0 -960 960 960">
-                                <path xmlns="http://www.w3.org/2000/svg" d="M689.71-34Q624-34 578-79.71T532-190q0-7 3-21L286-353q-20.21 14.87-44.01 22.94Q218.18-322 191-322q-66 0-111.5-46T34-480q0-66 45.5-112.5T191-639q28 0 52.9 9.06 24.89 9.06 45.1 24.94l245-141q-1-6-1.5-12t-.5-11q0-66 46-112t112-46q65 0 111 46.5T847-769q0 65-46.21 111T690-612q-29.36 0-55.68-10T588-649L347-513q2 8.05 2.5 16.52.5 8.48.5 16.98t-.5 17.15Q349-453.7 346-445l240 137q22-19 47.45-29.5Q658.91-348 690-348q65.58 0 111.29 46Q847-256 847-190q0 65-46.29 110.5-46.3 45.5-111 45.5Z"/>
+                        <div
+                            class="px-[10] pb-[10.5px] pt-3 rounded-full border-2 border-yellow-500 flex flex-row items-center cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-[20] fill-yellow-500"
+                                viewBox="0 -960 960 960">
+                                <path xmlns="http://www.w3.org/2000/svg"
+                                    d="M689.71-34Q624-34 578-79.71T532-190q0-7 3-21L286-353q-20.21 14.87-44.01 22.94Q218.18-322 191-322q-66 0-111.5-46T34-480q0-66 45.5-112.5T191-639q28 0 52.9 9.06 24.89 9.06 45.1 24.94l245-141q-1-6-1.5-12t-.5-11q0-66 46-112t112-46q65 0 111 46.5T847-769q0 65-46.21 111T690-612q-29.36 0-55.68-10T588-649L347-513q2 8.05 2.5 16.52.5 8.48.5 16.98t-.5 17.15Q349-453.7 346-445l240 137q22-19 47.45-29.5Q658.91-348 690-348q65.58 0 111.29 46Q847-256 847-190q0 65-46.29 110.5-46.3 45.5-111 45.5Z" />
                             </svg>
                         </div>
                     </div>
@@ -186,169 +248,669 @@
             </div>
             <!--MAIN CONTENT-->
             <div id="main" class="mt-12 flex flex-col gap-5 font-medium">
-                <p>Understanding human behavior and cognition requires examining how individuals grow, learn, remember, and demonstrate intelligence over time. This three-week project immerses you in the fascinating world of psychology, where you'll explore key concepts in lifespan development, learning theories, memory, and intelligence. By diving deep into these topics, you'll uncover how they shape human interactions, behaviors, and thought processes.</p>
-                <p>Here, we'll break down the critical questions explored during the project and share key insights from the research. Through creative and original presentations, this project invites you to engage with these complex ideas in new and engaging ways.</p>
-                <ol class="list-decimal ml-5">
-                    <li>
-                        <span class="font-black">How Does Lifespan Development Influence Behavior and Human Interactions?</span>
-                        <p class="mt-2">Lifespan development is a continual process that influences how we behave and interact with others. As we age, we encounter new challenges, form different social bonds, and adapt to changing responsibilities. Here's a breakdown of how each life stage impacts behavior and social dynamics:</p>
-                        <ol class="list-disc ml-5 mt-2 flex flex-col gap-2">
-                            <li>
-                                <span class="font-black">Childhood:</span> In the early years, we learn basic social skills by interacting with family and peers. Play is an essential part of childhood, helping children build friendships, practice communication, and learn to cooperate.
-                            </li>
-                            <li>
-                                <span class="font-black">Adolescence:</span> During adolescence, peer pressure and the quest for identity profoundly influence behavior. Teenagers begin to navigate greater independence, which can alter their interactions with family and society. The transition from childhood to adulthood brings increased responsibilities, such as schoolwork, jobs, and relationships, which further shape priorities and behaviors.
-                            </li>
-                            <li>
-                                <span class="font-black">Adulthood:</span> As adults, we carry the weight of work, family, and societal expectations. Our behaviors become more centered around responsibilities, and this can affect our social relationships, as we may prioritize career and family over personal interactions.
-                            </li>
-                            <li>
-                                <span class="font-black">Aging:</span> In the later stages of life, many individuals reflect on past experiences, which may shift how they view relationships and their place in the world. As people grow older, they may place more value on close, meaningful connections, and may become more introspective about their life choices.
-                            </li>
-                        </ol>
-                    </li>
-                    <p class="my-5">These life stages show that human behavior and social interactions evolve over time. Understanding how experiences and challenges change across the lifespan helps explain why we behave the way we do at different points in life.</p>
-                    <li>
-                        <span class="font-black">What Are the Various Methods of Conditioning and How Do Learning Theories Evaluate These Methods?</span>
-                        <p class="mt-2">Learning theories offer valuable insights into how individuals acquire new behaviors and information. They include various methods of conditioning, each of which highlights a different aspect of how we learn:</p>
-                        <ol class="list-disc ml-5 mt-2 flex flex-col gap-2">
-                            <li>
-                                <span class="font-black">Classical Conditioning:</span> Popularized by Ivan Pavlov, classical conditioning occurs when a neutral stimulus becomes associated with a meaningful stimulus, eventually eliciting the same response. For example, Pavlov's famous experiment with dogs demonstrated how they could be conditioned to salivate at the sound of a bell if the bell was repeatedly paired with food.
-                            </li>
-                            <li>
-                                <span class="font-black">Operant Conditioning:</span> Developed by B.F. Skinner, operant conditioning focuses on how behavior is shaped by reinforcement (positive or negative) and punishment. For instance, an animal might learn to press a lever for food (positive reinforcement) or avoid a behavior that leads to an unpleasant consequence (punishment).
-                            </li>
-                            <li>
-                                <span class="font-black">Observational Learning:</span> Proposed by Albert Bandura, this theory suggests that we learn by observing others. By paying attention, remembering what we observe, and then replicating the behavior, individuals learn skills and behaviors that help them navigate the social world. This type of learning is central to socialization and personal development.
-                            </li>
-                        </ol>                           
-                    </li>
-                    <p class="my-5">Each of these theories plays a significant role in understanding how people change their behavior, whether in educational settings, therapy, or everyday life. Evaluating these methods allows us to better understand their strengths and limitations, as well as their applications in different contexts.</p>
-                    <li>
-                        <span class="font-black">What Biological Processes and Disorders Are Associated with Memory?</span>
-                        <p class="mt-2">Memory is a complex biological process that involves several mechanisms in the brain. It's critical for learning, decision-making, and maintaining personal identity. Some important biological processes related to memory include:</p>
-                        <ol class="list-disc ml-5 mt-2 flex flex-col gap-2">
-                            <li>
-                                <span class="font-black">Synaptic Plasticity:</span> This is the process by which connections between neurons become stronger or weaker over time, allowing the brain to adapt and store new information.
-                            </li>
-                            <li>
-                                <span class="font-black">Long-Term Potentiation (LTP):</span> LTP is a long-lasting increase in signal transmission between two neurons, which is thought to play a crucial role in learning and memory formation.
-                            </li>
-                            <li>
-                                <span class="font-black">Memory Consolidation:</span> The process by which short-term memories are stabilized and transformed into long-term memories.
-                            </li>
-                            <li>
-                                <span class="font-black">Immediate Early Genes:</span> These genes are activated in response to new experiences and are involved in the formation of new memories.
-                            </li>
-                        </ol>
-                        <p class="my-5">However, memory isn't always perfect, and various disorders can interfere with the process, including:</p>
-                        <ol class="list-disc ml-5 mt-2 flex flex-col gap-2">
-                            <li>
-                                <span class="font-black">Alzheimer's Disease:</span> A neurodegenerative disease that affects memory and other cognitive functions, leading to gradual memory loss and confusion.
-                            </li>
-                            <li>
-                                <span class="font-black">Posttraumatic Stress Disorder (PTSD):</span> PTSD can result in intrusive memories of traumatic events, making it difficult for individuals to process and remember information in a healthy way.
-                            </li>
-                            <li>
-                                <span class="font-black">Amnesia:</span> A condition in which individuals experience memory loss, often due to brain injury or psychological trauma.
-                            </li>
-                            <li>
-                                <span class="font-black">Depression and Anxiety:</span> Both of these mental health conditions can interfere with the encoding and recall of memories, leading to difficulties in remembering important information.
-                            </li>
-                        </ol>
-                        <p class="my-5">Understanding the biological underpinnings of memory and the disorders that affect it helps provide insight into both normal cognitive processes and how they can go awry.</p>
-                    </li>
-                    <li>
-                        <span class="font-black">How Have Measures and Perceptions of Intelligence Evolved Over Time?</span>
-                        <p class="mt-2">Intelligence is a multifaceted construct that has been understood and measured in different ways over the past century. Early conceptualizations of intelligence focused on simple, quantifiable metrics, while modern perspectives recognize a far broader range of cognitive abilities.</p>
-                        <ol class="list-disc ml-5 mt-2 flex flex-col gap-2">
-                            <li>
-                                <span class="font-black">Early 20th Century:</span> Intelligence testing began with figures like Francis Galton and Alfred Binet. Galton's theories focused on heredity and innate abilities, while Binet's work led to the development of the IQ test and the concept of “mental age.”
-                            </li>
-                            <li>
-                                <span class="font-black">Mid-20th Century:</span> During adolescence, peer pressure and the quest for identity profoundly influence behavior. Teenagers begin to navigate greater independence, which can alter their interactions with family and society. The transition from childhood to adulthood brings increased responsibilities, such as schoolwork, jobs, and relationships, which further shape priorities and behaviors.
-                                <ol class="list-disc ml-10 mt-2 flex flex-col gap-2">
-                                    <li>Linguistic</li>
-                                    <li>Logical-mathematical</li>
-                                    <li>Spatial</li>
-                                    <li>Bodily-kinesthetic</li>
-                                    <li>Musical</li>
-                                    <li>Interpersonal</li>
-                                    <li>Intrapersonal</li>
-                                    <li>Naturalistic</li>
-                                </ol>
-                            </li>
-                            <li class="mt-5">
-                                <span class="font-black">Late 20th Century:</span> There was a growing critique of the limitations of IQ tests. Newer, more inclusive assessments were developed, like the Stanford-Binet Intelligence Scale and the Woodcock-Johnson tests, which sought to account for a broader range of cognitive abilities.
-                            </li>
-                            <li>
-                                <span class="font-black">21st Century:</span> Intelligence is now viewed as a complex, multifaceted construct. It includes emotional intelligence (the ability to manage emotions and relationships), motivational intelligence (the ability to stay focused and motivated), and even cultural intelligence (the ability to understand and adapt to diverse cultural contexts).
-                            </li>
-                        </ol>
-                        <p class="my-5">These evolving perspectives reflect an expanding understanding of human cognition, recognizing that intelligence cannot be reduced to a single test score but is instead a dynamic and diverse set of abilities.</p>
-                    </li>
+                <p class="mt-4 text-lg">
+                    Psychology is honestly one of the coolest subjects to explore because it helps us understand
+                    everything
+                    about how people think, feel, and act. It's like diving into the mind and figuring out what makes us
+                    tick. In this 3-week project, we're going to tackle a few key topics in psychology: lifespan
+                    development, learning theories, memory, and intelligence. We'll dig into the big questions and find
+                    out
+                    how these topics show up in everyday life. Plus, I get to present my findings in a special way
+                    through website building!
+                </p>
+
+                <p class="mt-4 text-lg">
+                    Let's get into the key questions we'll be exploring during this project. These are the questions
+                    that
+                    guide our research and thinking:
+                </p>
+
+                <h2 class="mt-5 font-black text-3xl">
+                    How Does Lifespan Development Affect Behavior?
+                </h2>
+
+                <p class="mt-4 text-lg">
+                    The first question is about how growing up and getting older affects the way we act and interact
+                    with
+                    others. Lifespan development looks at all the stages of life, from childhood to old age, and how
+                    each
+                    stage brings its own challenges and experiences that shape who we are.
+                </p>
+
+                <p class="mt-4 text-lg">
+                    As we grow, our behavior changes in response to our experiences, relationships, and priorities.
+                    Here's
+                    how it looks at different stages:
+                </p>
+
+                <ol class="list-disc ml-5 mt-2 flex flex-col gap-2">
+                    <li><strong>Childhood:</strong> We learn how to interact with others by playing with friends and
+                        learning social rules.</li>
+                    <li><strong>Adolescence:</strong> This is the time for figuring out who we are. Peer pressure,
+                        school,
+                        and even our first job can all shape how we behave.</li>
+                    <li><strong>Adulthood:</strong> As we get older, we deal with new responsibilities, like work and
+                        family. Our social interactions change a lot.</li>
+                    <li><strong>Aging:</strong> Older adults often become more reflective about life and tend to value
+                        relationships and experiences more than material things.</li>
                 </ol>
-                <h1 class="mt-5 font-black text-5xl">Understanding Lifespan Development and Its Influence on Behavior and Interactions</h1>
-                <p>Human development is an ongoing process that influences behavior, relationships, and interactions throughout one's life. From the early years of childhood to the later stages of aging, each phase brings with it unique challenges and opportunities for growth. In this post, we will explore how lifespan development affects behavior and social interactions, with a focus on key psychological theories, particularly Erik Erikson's stages of psychosocial development, and relate these stages to my personal experiences.</p>
-                <h2 class="mt-5 font-black text-2xl">Childhood (0-12 Years)</h2>
-                <p>Developmental Characteristics:</p>
-                <ol class="list-disc ml-5 flex flex-col gap-2">
-                    <li>Rapid physical, cognitive, and emotional development.</li>
-                    <li>Language acquisition, motor skill development, and basic social understanding.</li>
-                    <li>Social interactions predominantly with family and peers, with egocentric behaviors gradually giving way to empathy and cooperation.</li>
+
+                <p class="mt-4 text-lg">
+                    Basically, as we grow up, we change—our behavior, the way we interact with others, and how we see
+                    the
+                    world around us. It's a process that happens throughout life.
+                </p>
+
+                <h2 class="mt-5 font-black text-3xl">
+                    The Different Ways We Learn
+                </h2>
+
+                <p class="mt-4 text-lg">
+                    Another big question we need to dive into is how we learn:
+                    <span class="font-black">What are the methods of conditioning, and how do learning theories explain
+                        these methods?</span>
+                </p>
+
+                <p class="mt-4 text-lg">
+                    Learning isn't just something that happens in school—it's happening all the time, whether we realize
+                    it
+                    or not. There are a few well-known ways we learn: through classical conditioning, operant
+                    conditioning,
+                    and observational learning.
+                </p>
+
+                <ol class="list-disc ml-5 mt-2 flex flex-col gap-2">
+                    <li><strong>Classical Conditioning:</strong> This is learning by association. A classic example is
+                        Pavlov's experiment with dogs. He rang a bell every time he fed them, and eventually, the dogs
+                        started salivating just at the sound of the bell (even before the food came). This kind of
+                        learning
+                        happens all around us, like when you hear a song and immediately think of a specific memory.
+                    </li>
+                    <li><strong>Operant Conditioning:</strong> This is learning through rewards and punishments. If you
+                        do
+                        something that gets you a reward (like a treat or praise), you're more likely to do it again. On
+                        the
+                        flip side, if you get punished for doing something, you'll probably avoid doing it in the
+                        future.
+                        Think of training a dog: they learn to sit when they get a treat.</li>
+                    <li><strong>Observational Learning:</strong> We can also learn by watching others. This is the basis
+                        of
+                        social learning theory by Albert Bandura. For example, kids often learn behaviors like how to
+                        talk,
+                        walk, or even how to behave in certain situations just by watching their parents or peers.</li>
                 </ol>
-                <p><span class="font-black">Behavioral Influence:</span> In childhood, behavior is shaped by the surrounding environment, often influenced by the caregivers and the early experiences in school and social settings. The development of basic trust, responsibility, and social skills is key at this stage.</p>
-                <p><span class="font-black">Personal Experience:</span> Reflecting on my childhood, I struggled with ADHD, which impacted my behavior significantly. I was impulsive and often acted without considering the consequences. I frequently acted out in school, which led to poor academic performance and the need for extra support. Despite this, I was fortunate to have a supportive family that provided care, allowing me to feel secure in my family relationships. My behavior was erratic, but it wasn’t until just before the transition into middle school that I experienced a sudden shift toward more rational thinking and social engagement. This pivotal moment helped me regain a sense of direction in my academic and social life.</p>
-                <p>Psychosocial Stage's Gained/Lost:</p>
-                <ol class="list-disc ml-5 flex flex-col gap-2">
-                    <li><span class="font-black">Trust vs. Mistrust:</span> I developed strong trust in my parents and caregivers, which laid the foundation for my ability to address personal struggles with their support. However, I felt distrust toward other authority figures, particularly teachers.</li>
-                    <li><span class="font-black">Autonomy vs. Shame and Doubt:</span> I often acted impulsively, as seen in incidents like stealing from the Scholastic Book Fair, which reflected a lack of control over my actions.</li>
-                    <li><span class="font-black">Initiative vs. Guilt:</span> I lacked initiative and responsibility, choosing to act out of impulse rather than planning or thinking ahead.</li>
-                    <li><span class="font-black">Industry vs. Inferiority:</span> I had a tendency to see myself as superior to others, though my actions (like the rock-throwing incident) often resulted in negative outcomes, highlighting my struggle with competence and self-discipline.</li>
+
+                <p class="mt-4 text-lg">
+                    These learning theories help us understand everything from how babies learn to talk to how we get
+                    better
+                    at sports or schoolwork. It's pretty wild how much we can learn just by observing others or
+                    experiencing
+                    rewards and punishments!
+                </p>
+
+                <h2 class="mt-5 font-black text-3xl">
+                    What's Going On Inside Our Heads (Biologically) When We Remember Stuff?
+                </h2>
+
+                <p class="mt-4 text-lg">
+                    Moving on to memory, let's explore another question: <span class="font-black">What biological
+                        processes
+                        and disorders are related to memory?</span> Basically, what happens in our brains when we
+                    remember
+                    something, and what happens when memory goes wrong?
+                </p>
+
+                <p class="mt-4 text-lg">
+                    Memory isn't just some magic trick our brain does. There are actual biological processes involved.
+                    Here
+                    are a few:
+                </p>
+
+                <ol class="list-disc ml-5 mt-2 flex flex-col gap-2">
+                    <li><strong>Synaptic Plasticity:</strong> This is the brain's ability to strengthen or weaken
+                        connections between neurons based on experience. It's how we can form and store memories.</li>
+                    <li><strong>Long-Term Potentiation:</strong> This is when repeated stimulation makes the connection
+                        between two neurons stronger, helping us retain memories more effectively.</li>
+                    <li><strong>Memory Consolidation:</strong> This is when short-term memories are turned into
+                        long-term
+                        memories.</li>
                 </ol>
-                <!--TODO:
-                    * Finish BM1
-                    * TODO BM2
-                    * TODO BM3
-                    * TODO CONCLUSION
-                    * TODO MLA sources
-                    * TODO CLEAN SITE AFTER ALL ELSE IS DONE
-                -->
+
+                <p class="mt-4 text-lg">
+                    However, things don't always go smoothly. Some disorders mess with memory, like:
+                </p>
+
+                <ol class="list-disc ml-5 mt-2 flex flex-col gap-2">
+                    <li><strong>Alzheimer's Disease:</strong> A disease that causes memory loss and confusion, usually
+                        in
+                        older adults.</li>
+                    <li><strong>Post-Traumatic Stress Disorder (PTSD):</strong> When people experience trauma, they
+                        might
+                        struggle with recalling or processing those memories properly.</li>
+                    <li><strong>Dementia:</strong> A condition where people lose memory and cognitive abilities as they
+                        get
+                        older.</li>
+                </ol>
+
+                <p class="mt-4 text-lg">
+                    Memory is a complicated process in the brain, and it's pretty fragile. So it's no surprise that when
+                    something goes wrong, it can have a huge impact on people's lives.
+                </p>
+
+                <h2 class="mt-5 font-black text-3xl">
+                    What Does "Intelligence" Really Mean?
+                </h2>
+
+                <p class="mt-4 text-lg">
+                    Finally, let's tackle the big question about intelligence: <span class="font-black">How have
+                        measures
+                        and perceptions of intelligence changed over time?</span> What we think of as “intelligent” has
+                    changed a lot over the years.
+                </p>
+
+                <p class="mt-4 text-lg">
+                    A long time ago, intelligence was seen as something you're just born with—like a fixed thing. But
+                    now,
+                    people realize that intelligence is a lot more complex than just an IQ number. In fact, Howard
+                    Gardner's
+                    theory of <a href="https://en.wikipedia.org/wiki/Multiple_intelligences"
+                        class="font-black text-yellow-500 underline underline-offset-[2px] decoration-1 hover:decoration-2 transition-all">multiple
+                        intelligences</a> suggests that there are actually several different kinds of intelligence.
+                    Here's a
+                    quick list of them:
+                </p>
+
+                <ol class="list-disc ml-5 mt-2 flex flex-col gap-2">
+                    <li><strong>Linguistic:</strong> The ability to use language effectively.</li>
+                    <li><strong>Logical-Mathematical:</strong> The ability to reason logically and solve math problems.
+                    </li>
+                    <li><strong>Spatial:</strong> The ability to think in three dimensions (like architects or artists).
+                    </li>
+                    <li><strong>Bodily-Kinesthetic:</strong> The ability to use your body effectively (think athletes or
+                        dancers).</li>
+                    <li><strong>Musical:</strong> The ability to create, appreciate, and perform music.</li>
+                    <li><strong>Interpersonal:</strong> The ability to understand and relate to other people.</li>
+                    <li><strong>Intrapersonal:</strong> The ability to understand yourself and your own emotions.</li>
+                    <li><strong>Naturalistic:</strong> The ability to understand the natural world (like biologists or
+                        environmentalists).</li>
+                </ol>
+
+                <p class="mt-4 text-lg">
+                    Today, intelligence is viewed as a combination of many different abilities, not just a number on a
+                    test.
+                    Some newer ideas include things like emotional intelligence (how well we understand and manage
+                    emotions)
+                    and cultural intelligence (how we interact with people from different cultures).
+                </p>
+
+                <p class="mt-4 text-lg">
+                    So, as we can see, the way we think about intelligence has evolved a lot. It's no longer just about
+                    who's the smartest on a test. It's about recognizing and developing all kinds of talents and
+                    abilities!
+                </p>
+
+                <!--END OF DRIVING QUESTIONS-->
+
+                <h2 class="mt-5 font-black text-4xl">Week 1: Benchmark 1 - Lifespan Development and Human Behavior</h2>
+
+                <p class="mt-2 text-lg">Objective: Explain how lifespan development influences behavior and
+                    interactions.</p>
+
+                <h3 class="mt-5 font-black text-3xl">Research Tasks:</h3>
+                <ul class="list-disc ml-5 mt-2">
+                    <li>Investigate the stages of human development: childhood, adolescence, adulthood, and aging.</li>
+                    <li>Explore how each stage influences behavior and social interactions.</li>
+                </ul>
+
+                <h3 class="mt-5 font-black text-3xl">Childhood (0-12)</h3>
+
+                <p class="mt-2">This stage is all about crazy growth - physically, cognitively, and emotionally. Kids
+                    are learning how to talk, get around, and start making sense of their relationships with others.</p>
+
+                <p class="mt-2">Socially, most interactions are with family and peers. Kids at this stage are kind of
+                    egocentric but slowly start to get the hang of empathy and cooperation as they grow up.</p>
+
+                <p class="mt-2 font-black">Example from MY LIFE:</p>
+                <p class="mt-2">So, as a kid, I was pretty rowdy - like, ADHD-level hyperactive. Honestly, I could never
+                    sit still, which made school a nightmare. My grades were terrible, and I needed extra help like an
+                    IEP. I barely tried to make friends, so I spent most of my elementary years pretty lonely. But I was
+                    active - did soccer at the start - and would always break the new toys I got, like, for no reason.
+                    And I had this impulse control issue where if I thought of something random (like breaking a toy
+                    car), I'd just go with it.</p>
+
+                <p class="mt-2">Things got worse when I started hoarding food at the cafeteria. Yeah, that's right - I
+                    started to gain a ton of weight. The ADHD meds didn't really help either, no matter how many patches
+                    or pills I tried. My parents struggled with it, but I don't think they ever really understood what
+                    was going on. And, honestly, I didn't either.</p>
+
+                <p class="mt-2">But then, just before my last year of elementary school, something flipped. Out of
+                    nowhere, I just stopped being a problem. My behavior changed, and I started getting better grades. I
+                    made friends, barely got into trouble, and I stopped needing all the meds. Like, I just figured it
+                    out. I know it sounds crazy, but that's how it happened. I felt like a new person. And here I am,
+                    doing much better now.</p>
+
+                <p class="mt-2">In summary: I wasn't the easiest kid to raise, but my parents made sure I was taken care
+                    of. They were always there for me. But I still struggled with socializing, which followed me into
+                    middle school. I started with no friends, a bad rep, and I felt like I missed out on so much. Still,
+                    it got better over time. So, what did I learn from Erik Erikson's stages?</p>
+
+                <ul class="list-disc ml-5 mt-2">
+                    <li><span class="font-black">Basic Trust vs. Mistrust</span>: I trusted my parents completely, and
+                        they trusted me to sort things out. That trust made me feel like I could handle things with
+                        their support.</li>
+                    <li><span class="font-black">Autonomy vs. Shame/Doubt</span>: Honestly, I didn't have much control
+                        over my actions as a kid. Even when I knew what I was doing was wrong (like stealing from the
+                        Scholastic book fair), I'd just do it. I never thought about consequences.</li>
+                    <li><span class="font-black">Initiative vs. Guilt</span>: I never took any initiative. I was always
+                        doing my own thing, ignoring instructions. Getting in trouble didn't bother me much either - I'd
+                        just apologize and move on.</li>
+                    <li><span class="font-black">Industry vs. Inferiority</span>: I thought I was the best at
+                        everything, even when I wasn't. I remember trying to impress some kids by throwing a rock - and
+                        hitting a car. Total fail. But I didn't feel inferior. I was too busy thinking I was amazing.
+                    </li>
+                </ul>
+
+                <h3 class="mt-5 font-black text-3xl">Adolescence (13-19)</h3>
+
+                <p class="mt-2">Adolescence is when things start to change big time. It's all about finding your
+                    independence, figuring out who you are, and a ton of emotional ups and downs.</p>
+
+                <p class="mt-2">In my case, after I graduated elementary school, I had this weird “snap” in my
+                    personality. I just changed from being that chaotic kid into someone who cared more about school and
+                    had a better attitude. Middle school was a huge improvement. My grades were better, I made friends,
+                    and I finally understood how to handle schoolwork. I stopped doing all the stuff that got me into
+                    trouble in elementary school. It was like the switch flipped. </p>
+
+                <p class="mt-2">Still, high school wasn't perfect. Freshman year was tough because I didn't care much
+                    about getting good grades. But by sophomore year, everything fell into place. I learned to focus and
+                    control my actions. I turned into a much more normal, “average” student. That was honestly a huge
+                    win for me.</p>
+
+                <p class="mt-2">In summary: I regained a lot of the qualities I missed during childhood. My ability to
+                    focus improved, I became less selfish, and I started caring about others more - even animals! I
+                    learned how to trust teachers and accept authority. The snap' really saved my life. Without it, I
+                    don't think I'd be where I am today.</p>
+
+                <p class="mt-2">What did I gain based on Erikson's stages during adolescence?</p>
+
+                <ul class="list-disc ml-5 mt-2">
+                    <li><span class="font-black">Identity vs. Role Confusion</span>: I figured out who I am. I know what
+                        I'm capable of now and where I want to go in life. Still a bit worried about the future, but not
+                        as much.</li>
+                    <li><span class="font-black">Intimacy vs. Isolation</span>: I'm learning to form real, meaningful
+                        relationships. As for love, I think that will come when I'm a bit older - maybe around 30.</li>
+                    <li><span class="font-black">Generativity vs. Stagnation</span>: I'm pretty sure I'll keep pushing
+                        to grow and make a difference, especially with my future career in programming.</li>
+                </ul>
+
+                <h3 class="mt-5 font-black text-3xl">Adulthood (20-64)</h3>
+
+                <p class="mt-2">I can't speak from personal experience yet, but I've thought about how the next stages
+                    will likely play out for me. In adulthood, I see myself focusing on my career in IT, building
+                    relationships, and growing into a more well-rounded person.</p>
+
+                <p class="mt-2">Here's what I think I'll gain based on Erikson's stages:</p>
+
+                <ul class="list-disc ml-5 mt-2">
+                    <li><span class="font-black">Intimacy vs. Isolation</span>: I believe I'll have solid relationships
+                        with friends and family, but love might not come until later in life. I expect to have moments
+                        of loneliness since my job will likely keep me behind a screen a lot.</li>
+                    <li><span class="font-black">Generativity vs. Stagnation</span>: I want to help the next generation,
+                        whether through my career or by having a family. I also expect to achieve something big in
+                        programming - maybe even get awards for it.</li>
+                </ul>
+
+                <h3 class="mt-5 font-black text-3xl">Aging (65+)</h3>
+
+                <p class="mt-2">Again, not speaking from experience here, but when I get older, I hope I'll look back on
+                    my life and feel good about what I've accomplished. Hopefully, I'll have a family, a career I'm
+                    proud of, and a life full of experiences.</p>
+
+                <p class="mt-2">What do I hope to gain from this stage, based on Erikson's stages?</p>
+
+                <ul class="list-disc ml-5 mt-2">
+                    <li><span class="font-black">Ego Integrity vs. Despair</span>: I hope I'll feel satisfied with what
+                        I've done and proud of my life. My only regret so far is how I acted as a kid, but that's
+                        something I've learned from.</li>
+                </ul>
+
+                <h3 class="mt-5 font-black text-3xl">Theories on Lifespan Development</h3>
+
+                <p class="mt-2">There are tons of psychological theories that explain how we develop over the course of
+                    our lives. Some of the most influential ones include:</p>
+
+                <ul class="list-disc ml-5 mt-2">
+                    <li><a href="https://en.wikipedia.org/wiki/Erikson%27s_stages_of_psychosocial_development"
+                            class="font-black text-yellow-500 underline underline-offset-[2px] decoration-1 hover:decoration-2-">Erik
+                            Erikson's Psychosocial Stages</a></li>
+                    <li><a href="https://www.simplypsychology.org/piaget.html"
+                            class="font-black text-yellow-500 underline underline-offset-[2px] decoration-1 hover:decoration-2-">Jean
+                            Piaget's Cognitive Development</a></li>
+                    <li><a href="https://www.simplypsychology.org/lev-vygotsky.html"
+                            class="font-black text-yellow-500 underline underline-offset-[2px] decoration-1 hover:decoration-2-">Lev
+                            Vygotsky's Sociocultural Theory</a></li>
+                </ul>
+
+                <p class="mt-2">Understanding these theories will help explain why people behave the way they do at
+                    different stages of life.</p>
+
+
+                <!-- END OF BM1 -->
+
+
+                <h2 class="mt-5 font-black text-4xl">Week 2: Benchmark 2 - Learning Theories and Conditioning Methods
+                </h2>
+
+                <p class="mt-2 text-lg">Objective: Evaluate the methods of conditioning and learning theories.</p>
+
+                <h3 class="mt-5 font-black text-3xl">Research Tasks:</h3>
+                <ul class="list-disc ml-5 mt-2">
+                    <li>Examine key learning theories, including classical conditioning, operant conditioning, and
+                        social learning theory.</li>
+                    <li>Analyze experiments and case studies that illustrate these concepts.</li>
+                </ul>
+
+                <h3 class="mt-5 font-black text-3xl">Classical Conditioning</h3>
+
+                <p class="mt-2">Classical Conditioning is a learning process in which a neutral stimulus becomes
+                    associated with a stimulus that naturally produces a response. Over time, the neutral stimulus
+                    starts to evoke the same response on its own.</p>
+
+                <p class="mt-2">Key Figure: <span class="font-black">Ivan Pavlov</span> (Pavlov's Dogs experiment)</p>
+
+                <p class="mt-2">In Pavlov's famous experiment, he conditioned dogs to salivate at the sound of a bell by
+                    repeatedly pairing the sound with food. Eventually, the dogs would salivate just from hearing the
+                    bell, even when there was no food present.</p>
+
+                <p class="my-5"><img src="./src/res/venn-diagram.png"></p>
+
+                <p class="mt-2">This concept made me think about my childhood and how I used to always rush downstairs
+                    whenever I heard the front door open. Why? Because my dad always brought food home when he came
+                    through that door. The sound of the door opening became a “trigger” for food in my mind. So, even
+                    when my dad stopped bringing food home and I heard that door, I found myself running downstairs
+                    anyway. I thought it was funny how my brain was still “conditioned” to expect food, even though it
+                    wasn't coming anymore. This is like Pavlov's experiment in real life!</p>
+
+                <h3 class="mt-5 font-black text-3xl">Operant Conditioning</h3>
+
+                <p class="mt-2">Operant Conditioning is a type of learning where behavior is controlled by
+                    consequences—either reinforcement (which strengthens the behavior) or punishment (which weakens it).
+                </p>
+
+                <p class="mt-2">Key Figure: <span class="font-black">B.F. Skinner</span> (Skinner's Box)</p>
+
+                <p class="mt-2">In Skinner's experiment, he placed rats in a box with a lever or button. When the rat
+                    pressed it, it would receive food. This positive reinforcement made the rat more likely to press the
+                    lever again. In this case, the behavior (pressing the lever) was strengthened by the reward (food).
+                </p>
+
+                <p class="mt-2">For me, this concept can be related to when I used to mow the lawn for money. At first,
+                    I was all about getting paid because I wanted to buy stuff. That money was the “reinforcer” that
+                    motivated me to keep mowing. But when winter came and I couldn't mow anymore, I lost my motivation.
+                    Over time, I realized that the “reward” of money wasn't enough to keep me interested, and I stopped
+                    doing it for money. This is basically what happened in Skinner's experiment, where the reinforcement
+                    worked, but only as long as the reward was consistent.</p>
+
+                <h3 class="mt-5 font-black text-3xl">Social Learning Theory</h3>
+
+                <p class="mt-2">Social Learning Theory explains that people can learn by observing others, especially in
+                    social settings, without needing direct reinforcement or punishment. People imitate behaviors they
+                    see around them.</p>
+
+                <p class="mt-2">Key Figure: <span class="font-black">Albert Bandura</span> (Bobo Doll Experiment)</p>
+
+                <p class="mt-2">In Bandura's experiment, children who watched an adult behave aggressively toward a Bobo
+                    doll were more likely to imitate that behavior when they were given the opportunity. This
+                    demonstrated that learning doesn't always require direct reinforcement; sometimes, simply watching
+                    someone else can be enough to shape behavior.</p>
+
+                <p class="mt-2">This theory really connects with my own experiences, especially with how I shaped my
+                    opinions about my school. When I was in freshman year, I was super into band, and I loved New Tech
+                    High School (NTHS). But then, I started hanging out with older students in band, and they would talk
+                    badly about the school. I began to imitate their negative views. I started to dislike the school
+                    too, just because the people around me did.</p>
+
+                <p class="mt-2">In sophomore year, that negative view stuck with me. I focused on band and ignored
+                    everything else at New Tech. But then something changed in junior year. I got involved with
+                    programming and started working on a project called Graspass, a new version of Echo. I realized that
+                    the school wasn't actually that bad. It was my peers' influence that made me see it negatively. Once
+                    I started thinking for myself, my perspective completely shifted. Senior year has been a breeze
+                    because I don't carry that negativity anymore. I've been able to focus better, my mood improved, and
+                    I've felt more motivated overall. I learned that sometimes you're conditioned to think a certain way
+                    just by the people you surround yourself with, but it's possible to break out of that mindset when
+                    you take a step back and see things more clearly.</p>
+
+                <h3 class="mt-5 font-black text-3xl">Implications of These Theories in Real-World Settings</h3>
+
+                <p class="mt-2">These theories aren't just limited to experiments; they happen in real life all the
+                    time. Pavlov's classical conditioning, Skinner's operant conditioning, and Bandura's social learning
+                    theory all show up in everyday situations. Whether it's teaching your dog to sit with treats
+                    (classical conditioning), rewarding kids for doing their chores (operant conditioning), or people
+                    copying what others do (social learning), these learning principles shape how we behave and learn
+                    from our environment.</p>
+
+                <h3 class="mt-5 font-black text-3xl">Sources</h3>
+
+                <ul class="list-disc ml-5 mt-2">
+                    <li><a href="https://www.psychologytoday.com/intro-to-psychology/classical-conditioning"
+                            class="font-black text-yellow-500 underline underline-offset-[2px] decoration-1 hover:decoration-2">Conditioned
+                            Reflexes (Pavlov)</a></li>
+                    <li><a href="https://www.simplypsychology.org/operant-conditioning.html"
+                            class="font-black text-yellow-500 underline underline-offset-[2px] decoration-1 hover:decoration-2">The
+                            Behavior of Organisms (Skinner)</a></li>
+                    <li><a href="https://www.psychologytoday.com/us/basics/social-learning-theory"
+                            class="font-black text-yellow-500 underline underline-offset-[2px] decoration-1 hover:decoration-2">Bandura's
+                            Bobo Doll Experiment</a></li>
+                    <li><a href="https://www.jstor.org/stable/10.2307/42768635"
+                            class="font-black text-yellow-500 underline underline-offset-[2px] decoration-1 hover:decoration-2">Video
+                            Games & Aggressive Thoughts</a></li>
+                </ul>
+
+
+                <!-- END OF BM2 -->
+
+
+                <h1 class="mt-5 font-black text-5xl">Week 3: Benchmark 3 Memory and Intelligence</h1>
+
+                <p class="mt-3 text-lg">Objective: Explain biological processes related to memory and evaluate measures
+                    of intelligence.</p>
+
+                <h2 class="mt-5 font-semibold text-3xl">Memory</h2>
+
+                <p class="mt-3 text-lg">Research the biological basis of memory, including brain structures involved in
+                    memory formation (e.g., hippocampus, amygdala).</p>
+
+                <h3 class="mt-4 font-semibold text-2xl">Hippocampus:</h3>
+                <p class="text-lg">Located in the medial temporal lobe, plays an important role in forming new memories,
+                    including declarative memory (memories that can be consciously recalled). Damage to the hippocampus
+                    can impair the ability to form new long-term memories, a condition often observed in patients with
+                    Alzheimer's disease.</p>
+
+                <h3 class="mt-4 font-semibold text-2xl">Amygdala:</h3>
+                <p class="text-lg">Associated with the processing of emotions and plays a role in memory, especially
+                    emotional memory. It is involved in strengthening memories that have strong emotional components.
+                </p>
+
+                <h3 class="mt-4 font-semibold text-2xl">Cerebellum and Basal Ganglia:</h3>
+                <p class="text-lg">These structures are involved in procedural memory, which refers to the memory of
+                    skills and actions. For example, the cerebellum plays an important role in motor learning and
+                    coordination, while the basal ganglia are involved in the habit-forming process.</p>
+
+                <h3 class="mt-4 font-semibold text-2xl">Prefrontal Cortex:</h3>
+                <p class="text-lg">Involved in working memory, which is the short-term storage and manipulation of
+                    information. It allows for cognitive processes such as problem-solving, decision-making, and
+                    planning. Damage to the prefrontal cortex may result in deficits in attention, decision-making, and
+                    memory retrieval.</p>
+
+                <h2 class="mt-5 font-semibold text-3xl">Common Memory Disorders</h2>
+
+                <p class="mt-3 text-lg">Identify common memory disorders (e.g., Alzheimer's disease, amnesia) and their
+                    psychological implications.</p>
+
+                <ol class="list-disc ml-5 mt-2 flex flex-col gap-2">
+                    <li><span class="font-black">Alzheimer's Disease:</span> A neurodegenerative disorder that primarily
+                        affects memory, particularly the formation of new episodic memories. It is characterized by the
+                        progressive loss of cognitive function due to the degeneration of brain structures, notably the
+                        hippocampus.</li>
+                    <li><span class="font-black">Amnesia:</span> Refers to a loss of memory, which can be caused by
+                        brain injury, disease, or psychological trauma. There are two types of amnesia:
+                        <ul class="list-disc ml-5 mt-2">
+                            <li><span class="font-black">Anterograde Amnesia:</span> Inability to form new memories
+                                after a traumatic event.</li>
+                            <li><span class="font-black">Retrograde Amnesia:</span> Loss of memories formed before the
+                                event causing the amnesia.</li>
+                        </ul>
+                    </li>
+                    <li><span class="font-black">Korsakoff's Syndrome:</span> Caused by thiamine (vitamin B1)
+                        deficiency, often due to chronic alcohol abuse, Korsakoff's syndrome results in severe memory
+                        impairment. It primarily affects episodic memory and is linked to damage in the thalamus and
+                        mammillary bodies, regions that interact with the hippocampus.</li>
+                    <li><span class="font-black">Post-Traumatic Stress Disorder (PTSD):</span> Can affect memory in
+                        relation to traumatic events. The amygdala becomes hyperactive in individuals with PTSD, which
+                        may cause intrusive memories, flashbacks, or difficulty distinguishing between past and present
+                        experiences.</li>
+                </ol>
+
+                <h2 class="mt-5 font-semibold text-3xl">Intelligence</h2>
+
+                <p class="mt-3 text-lg">Investigate different measures of intelligence, including IQ tests, Gardner's
+                    theory of multiple intelligences, and cultural perspectives on intelligence.</p>
+
+                <h3 class="mt-4 font-semibold text-2xl">Measures of Intelligence</h3>
+                <ol class="list-disc ml-5 mt-2 flex flex-col gap-2">
+                    <li><span class="font-black">IQ Tests (Intelligence Quotient):</span> IQ tests are among the most
+                        widely used measures of intelligence. They aim to quantify cognitive abilities through
+                        standardized testing. These tests typically measure skills like logical reasoning, mathematical
+                        ability, language comprehension, and spatial visualization.</li>
+                    <li><span class="font-black">Gardner's Theory of Multiple Intelligences:</span> Howard Gardner
+                        proposed that intelligence is not a single entity but rather a set of distinct independent
+                        abilities. His theory includes at least eight types of intelligences:
+                        <ul class="list-disc ml-5 mt-2">
+                            <li>Linguistic</li>
+                            <li>Logical-mathematical</li>
+                            <li>Spatial</li>
+                            <li>Musical</li>
+                            <li>Bodily-kinesthetic</li>
+                            <li>Interpersonal</li>
+                            <li>Intrapersonal</li>
+                            <li>Naturalistic</li>
+                        </ul>
+                    </li>
+                    <li><span class="font-black">Cultural Perspectives on Intelligence:</span> Intelligence is
+                        culturally defined and can vary across different societies. In some cultures, social
+                        intelligence—such as the ability to navigate complex social hierarchies—is highly valued, while
+                        in others, academic achievements and logical reasoning are prioritized.</li>
+                </ol>
+
+                <h3 class="mt-4 font-semibold text-2xl">Compare Historical and Contemporary Views on Intelligence</h3>
+
+                <p class="mt-3 text-lg">Intelligence has been seen as a single, general trait (g-factor) that determines
+                    a person's cognitive abilities. The concept of general intelligence was popularized by Charles
+                    Spearman in the early 20th century. He argued that people who perform well on one cognitive task
+                    tend to perform well on others, suggesting a general cognitive ability.</p>
+
+                <p class="mt-3 text-lg">In contrast, contemporary theories such as Gardner's multiple intelligences and
+                    Sternberg's triarchic theory offer a broader view of intelligence. Sternberg's theory suggests that
+                    intelligence consists of three aspects:
+                <ul class="list-disc ml-5 mt-2">
+                    <li>Analytical Intelligence</li>
+                    <li>Creative Intelligence</li>
+                    <li>Practical Intelligence</li>
+                </ul>
+                These modern theories reflect a shift away from a narrow, standardized view of intelligence toward a
+                more inclusive and dynamic understanding of cognitive abilities.</p>
+
+                <h3 class="mt-4 font-semibold text-2xl">Societal Values and Intelligence</h3>
+
+                <p class="mt-3 text-lg">The way intelligence is defined and measured often reflects societal values. For
+                    instance, in an increasingly globalized world, there is a growing recognition of the value of
+                    diverse cognitive skills, such as emotional intelligence, social intelligence, and creativity.
+                    However, traditional measures like IQ tests still dominate educational and professional settings in
+                    many parts of the world, emphasizing logical reasoning and analytical thinking over other types of
+                    intelligence. This has led to debates about whether these tests truly reflect an individual's
+                    potential and capabilities.</p>
+
+                <h2 class="mt-5 font-semibold text-3xl">Conclusion</h2>
+
+                <p class="mt-3 text-lg">Understanding memory and intelligence from both biological and psychological
+                    perspectives provides important insights into how we learn, recall information, and develop
+                    cognitive skills. Memory is not just a passive recording of events but an active process involving
+                    multiple brain regions. Intelligence, on the other hand, has evolved from a narrow definition to a
+                    broader, more inclusive concept, emphasizing not only logical reasoning but also creativity,
+                    practical skills, and emotional intelligence. As our understanding of these concepts deepens, so
+                    does our appreciation for the complexity and diversity of human cognition.</p>
+
+                <h2 class="mt-5 font-semibold text-3xl">Sources</h2>
+                <ul class="list-disc ml-5 mt-2">
+                    <li><a href="https://www.cambridge.org/9781107088357"
+                            class="font-black text-yellow-500 underline underline-offset-[2px] decoration-1 hover:decoration-2 transition-all">Frames
+                            of Mind: The Theory of Multiple Intelligences</a></li>
+                    <li><a href="https://www.cambridge.org/9780521497722"
+                            class="font-black text-yellow-500 underline underline-offset-[2px] decoration-1 hover:decoration-2 transition-all">Collective
+                            Wisdom: Principles and Mechanisms (Cambridge University Press, 2012)</a></li>
+                    <li><a href="https://www.amscopub.com/"
+                            class="font-black text-yellow-500 underline underline-offset-[2px] decoration-1 hover:decoration-2 transition-all">AMSCO
+                            Advanced Placement Psychology</a></li>
+                </ul>
+
+
             </div>
-            <!--END OF MAIN CONTENT-->
-            <div class="mt-20"></div>
+            <!---->
         </div>
-        <!--chip overlay for light/dark mode, settings, and my github link-->
-        <div class="py-2 px-[7px] w-fit bg-black flex flex-col gap-[5px] justify-between items-center rounded-[15px] fixed right-2 bottom-2 text-white shadow-xl select-none">
-            <a id="light-or-dark" class="cursor-pointer">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-[30px] fill-white" viewBox="0 -960 960 960">
-                    <path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm40-83q119-15 199.5-104.5T800-480q0-123-80.5-212.5T520-797v634Z"/>
-                </svg>
-            </a>
-            <a id="open-settings" class="cursor-pointer">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-[27.89px] fill-white" viewBox="0 -960 960 960">
-                    <path xmlns="http://www.w3.org/2000/svg" d="M405-34q-32 0-55-20t-27-51l-10-70q-3-2-6.5-4t-6.5-4l-65 27q-29 12-59 2.5T131-191L56-325q-16-27-10-57.5T77-431l54-42q0-2 .5-4t.5-4q0-2-.5-3.5t-.5-3.5l-53-40q-26-19-32-49.5T56-636l75-132q16-27 45-37t58 2l66 26q4-1 7.5-3t6.5-4l9-70q3-32 26.5-52.5T405-927h150q32 0 55.5 20.5T637-854l9 70 8 4 8 4 62-27q30-12 59.5-2t45.5 37l75 132q16 28 10 58.5T882-528l-55 40v8q0 2-.5 4t-.5 4l55 40q26 18 32 48.5T903-325l-76 134q-15 27-44.5 37t-59.5-2l-65-27q-3 1-6 3.5t-5 3.5l-10 71q-4 31-27 51t-55 20H405Zm73-296q63 0 107-44t44-107q0-62-44-106.5T478-632q-63 0-107 44.5T327-481q0 63 44 107t107 44Z"/>
-                </svg>
-            </a>
-            <div class="bg-white py-[.5px] w-[1.5rem] my-[5px] rounded-full"></div>
-            <a href="https://github.com/wo-r">
-                <img class="rounded-full w-[25px] shadow-xl" src="https://avatars.githubusercontent.com/u/78428114?v=4">
-            </a>
-        </div>
-    </body>
-    <div class="modal-list">
-        <div class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
-            <div class="bg-black p-6 rounded-lg shadow-lg w-48 md:w-96 lg:w-7/12">
-                <h2 class="text-xl font-semibold mb-4 text-white">Accessability Settings</h2>
-                <p class="text-white mb-6">Make the website easier to read with these accessability settings.</p>
-                <div class="my-10 flex flex-col gap-5">
-                    <div class="option flex flex-row gap-2">
-                        <div class="toggle-option" setting="setfontsize"></div>
-                    </div>
+        <!--TABLE of CONTENTS-->
+        <div class="w-max sticky top-5 h-full overflow-hidden mt-[100px]">
+            <div class="font-black p-2 bg-black text-white w-full border-b-[5px] border-yellow-500">Table of contents</div>
+            <ol id="table-of-contents" class="list-disc flex flex-col h-[60vh] overflow-scroll mb-5 text-black">
+            </ol>
+            <div class="flex flex-col gap-2">
+                <div class="w-full border-t border-opacity-40 border-gray-400"></div>
+                <span class="font-black">Subjects</span>
+                <div class="flex flex-row flex-wrap w-full gap-1">
+                    <div class="text-[10px] font-black hover:decoration-2 decoration-1 underline underline-offset-[2px] text-yellow-500 cursor-pointer px-2 py-1 rounded-full bg-gray-200 transition-all">Pyschological</div>
+                    <div class="text-[10px] font-black hover:decoration-2 decoration-1 underline underline-offset-[2px] text-yellow-500 cursor-pointer px-2 py-1 rounded-full bg-gray-200 transition-all">Blog</div>
+                    <div class="text-[10px] font-black hover:decoration-2 decoration-1 underline underline-offset-[2px] text-yellow-500 cursor-pointer px-2 py-1 rounded-full bg-gray-200 transition-all">Research</div>
+                    <div class="text-[10px] font-black hover:decoration-2 decoration-1 underline underline-offset-[2px] text-yellow-500 cursor-pointer px-2 py-1 rounded-full bg-gray-200 transition-all">Human Behavior</div>
                 </div>
-                <button class="bg-yellow-500 text-black px-4 py-2 rounded-md hover:bg-yellow-400 focus:outline-none focus:ring-2 focus:ring-yellow-500">Close</button>
+                <div class="w-full border-b border-opacity-40 border-gray-400"></div>
             </div>
         </div>
     </div>
-    <script src="./src/script.js"></script>
+    <!--chip overlay for light/dark mode, settings, and my github link-->
+    <div
+        class="py-2 px-[7px] w-fit bg-black flex flex-col gap-[5px] justify-between items-center rounded-[15px] fixed right-2 bottom-2 text-white shadow-xl select-none">
+        <a id="light-or-dark" class="cursor-pointer">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-[30px] fill-white" viewBox="0 -960 960 960">
+                <path
+                    d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm40-83q119-15 199.5-104.5T800-480q0-123-80.5-212.5T520-797v634Z" />
+            </svg>
+        </a>
+        <a id="open-settings" class="cursor-pointer">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-[27.89px] fill-white" viewBox="0 -960 960 960">
+                <path xmlns="http://www.w3.org/2000/svg"
+                    d="M405-34q-32 0-55-20t-27-51l-10-70q-3-2-6.5-4t-6.5-4l-65 27q-29 12-59 2.5T131-191L56-325q-16-27-10-57.5T77-431l54-42q0-2 .5-4t.5-4q0-2-.5-3.5t-.5-3.5l-53-40q-26-19-32-49.5T56-636l75-132q16-27 45-37t58 2l66 26q4-1 7.5-3t6.5-4l9-70q3-32 26.5-52.5T405-927h150q32 0 55.5 20.5T637-854l9 70 8 4 8 4 62-27q30-12 59.5-2t45.5 37l75 132q16 28 10 58.5T882-528l-55 40v8q0 2-.5 4t-.5 4l55 40q26 18 32 48.5T903-325l-76 134q-15 27-44.5 37t-59.5-2l-65-27q-3 1-6 3.5t-5 3.5l-10 71q-4 31-27 51t-55 20H405Zm73-296q63 0 107-44t44-107q0-62-44-106.5T478-632q-63 0-107 44.5T327-481q0 63 44 107t107 44Z" />
+            </svg>
+        </a>
+        <div class="bg-white py-[.5px] w-[1.5rem] my-[5px] rounded-full"></div>
+        <a href="https://github.com/wo-r">
+            <img class="rounded-full w-[25px] shadow-xl" src="https://avatars.githubusercontent.com/u/78428114?v=4">
+        </a>
+    </div>
+</body>
+<div class="modal-list">
+    <div class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div class="bg-black p-6 rounded-lg shadow-lg w-48 md:w-96 lg:w-7/12">
+            <h2 class="text-xl font-semibold mb-4 text-white">Accessability Settings</h2>
+            <p class="text-white mb-6">Make the website easier to read with these accessability settings.</p>
+            <div class="my-10 flex flex-col gap-5">
+                <div class="option flex flex-row gap-2">
+                    <div class="toggle-option" setting="setfontsize"></div>
+                </div>
+            </div>
+            <button
+                class="bg-yellow-500 text-black px-4 py-2 rounded-md hover:bg-yellow-400 focus:outline-none focus:ring-2 focus:ring-yellow-500">Close</button>
+        </div>
+    </div>
+</div>
+<script src="./src/script.js"></script>
+
 </html>
