@@ -122,7 +122,7 @@
 
 /** Makes things fade in if you scroll to it */
 {
-    $("#main p, #main li, #main h1, #main h2").each(async function () {
+    $("#main p, #main li, #main h1, #main h2, #main img, #main video, #main div").each(async function () {
         $(this).addClass("fade-in")
     })
 
