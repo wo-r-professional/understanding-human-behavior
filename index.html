@@ -172,7 +172,8 @@
     </div>
     <!---->
     <div class="flex flex-row justify-between gap-10 container mx-auto px-22 xl:px-36">
-        <div class="container mx-auto px-22 xl:px-36 w-[80ch]">
+        <!-- this had px-22 xl:px-36 (please check on different browser if it works)-->
+        <div class="container mx-auto w-[80ch]">
             <!--breadcrumbs-->
             <div class="flex flex-row gap-1 mt-5">
                 <a class="underline transition-all hover:text-yellow-500 text-black cursor-pointer">wo-r articles</a>
@@ -202,7 +203,7 @@
                     <img class="w-24 rounded-full" src="./src/res/author.jpg">
                 </div>
                 <span class="text-2xl font-black w-[800px]">This blog attempts to teach you about human behavior through
-                    research and through pesonal experiences from me.</span>
+                    research and through personal experiences from me.</span>
             </div>
             <!--author of article & like/dislike/email/share-->
             <div class="mt-10 flex flex-row">
@@ -247,44 +248,37 @@
                 </div>
             </div>
             <!--MAIN CONTENT-->
-            <div id="main" class="mt-12 flex flex-col gap-5 font-medium">
+            <div id="main" class="mt-12 flex flex-col gap-5 font-medium relative">
                 <!-- START OF DRIVING QUESTIONS -->
                 <p class="mt-4 text-lg">
                     Psychology is honestly one of the coolest subjects to explore because it helps us understand
-                    everything
-                    about how people think, feel, and act. It's like diving into the mind and figuring out what makes us
-                    tick. In this 3-week project, we're going to tackle a few key topics in psychology: lifespan
-                    development, learning theories, memory, and intelligence. We'll dig into the big questions and find
-                    out
-                    how these topics show up in everyday life. Plus, I get to present my findings in a special way
-                    through website building!
+                    everything about how people think, feel, and act. It's like diving into the mind and figuring out
+                    what makes us tick. In this 3-week project, we're going to tackle a few key topics in psychology:
+                    lifespan development, learning theories, memory, and intelligence. We'll dig into the big questions
+                    and find out how these topics show up in everyday life. Plus, I get to present my findings in a
+                    special way through website building!
                 </p>
                 <p class="mt-4 text-lg">
                     Let's get into the key questions we'll be exploring during this project. These are the questions
-                    that
-                    guide our research and thinking:
+                    that guide our research and thinking:
                 </p>
                 <h2 class="mt-5 font-black text-3xl">
                     How Does Lifespan Development Affect Behavior?
                 </h2>
                 <p class="mt-4 text-lg">
                     The first question is about how growing up and getting older affects the way we act and interact
-                    with
-                    others. Lifespan development looks at all the stages of life, from childhood to old age, and how
-                    each
-                    stage brings its own challenges and experiences that shape who we are.
+                    with others. Lifespan development looks at all the stages of life, from childhood to old age, and
+                    how each stage brings its own challenges and experiences that shape who we are.
                 </p>
                 <p class="mt-4 text-lg">
                     As we grow, our behavior changes in response to our experiences, relationships, and priorities.
-                    Here's
-                    how it looks at different stages:
+                    Here's how it looks at different stages:
                 </p>
                 <ol class="list-disc ml-5 mt-2 flex flex-col gap-2">
                     <li><strong>Childhood:</strong> We learn how to interact with others by playing with friends and
                         learning social rules.</li>
                     <li><strong>Adolescence:</strong> This is the time for figuring out who we are. Peer pressure,
-                        school,
-                        and even our first job can all shape how we behave.</li>
+                        school, and even our first job can all shape how we behave.</li>
                     <li><strong>Adulthood:</strong> As we get older, we deal with new responsibilities, like work and
                         family. Our social interactions change a lot.</li>
                     <li><strong>Aging:</strong> Older adults often become more reflective about life and tend to value
@@ -292,79 +286,72 @@
                 </ol>
                 <p class="mt-4 text-lg">
                     Basically, as we grow up, we change our behavior, the way we interact with others, and how we see
-                    the
-                    world around us. It's a process that happens throughout life.
+                    the world around us. It's a process that happens throughout life.
                 </p>
                 <h2 class="mt-5 font-black text-3xl">
                     The Different Ways We Learn
                 </h2>
                 <p class="mt-4 text-lg">
-                    Another big question we need to dive into is how we learn:
-                    <span class="font-black">What are the methods of conditioning, and how do learning theories explain
-                        these methods?</span>
+                    Another big question we need to dive into is how we learn: <span class="font-black">What are the
+                        methods of conditioning, and how do learning theories explain these methods?</span>
                 </p>
                 <p class="mt-4 text-lg">
-                    Learning isn't just something that happens in school it's happening all the time, whether we realize
-                    it
-                    or not. There are a few well-known ways we learn: through classical conditioning, operant
-                    conditioning,
-                    and observational learning.
+                    Learning isn't just something that happens in school; it's happening all the time, whether we
+                    realize it or not. There are a few well-known ways we learn: through classical conditioning, operant
+                    conditioning, and observational learning.
                 </p>
                 <ol class="list-disc ml-5 mt-2 flex flex-col gap-2">
                     <li><strong>Classical Conditioning:</strong> This is learning by association. A classic example is
                         Pavlov's experiment with dogs. He rang a bell every time he fed them, and eventually, the dogs
                         started salivating just at the sound of the bell (even before the food came). This kind of
-                        learning
-                        happens all around us, like when you hear a song and immediately think of a specific memory.
-                        <video class="my-5 bg-white w-full h-[20rem]" controls>
+                        learning happens all around us, like when you hear a song and immediately think of a specific
+                        memory.</li>
+                    <div class="my-5">
+                        <video id="pavlovs-experiment" class="bg-white w-full h-[20rem]" controls>
                             <source src="./src/res/pav-dogs-experiement.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
-                    </li>
+                        <p class="text-sm">Pavlov's Dogs Experiment - Classical Conditioning</p>
+                    </div>
                     <li><strong>Operant Conditioning:</strong> This is learning through rewards and punishments. If you
-                        do
-                        something that gets you a reward (like a treat or praise), you're more likely to do it again. On
-                        the
-                        flip side, if you get punished for doing something, you'll probably avoid doing it in the
-                        future.
-                        Think of training a dog: they learn to sit when they get a treat.
-                        <video class="my-5 bg-white w-full h-[20rem]" controls>
+                        do something that gets you a reward (like a treat or praise), you're more likely to do it again.
+                        On the flip side, if you get punished for doing something, you'll probably avoid doing it in the
+                        future. Think of training a dog: they learn to sit when they get a treat.</li>
+                    <div class="my-5">
+                        <video id="skinners-experiment" class="bg-white w-full h-[20rem]" controls>
                             <source src="./src/res/skinners-box-experiement.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
-                    </li>
+                        <p class="text-sm">Skinner's Box - Operant Conditioning</p>
+                    </div>
                     <li><strong>Observational Learning:</strong> We can also learn by watching others. This is the basis
-                        of
-                        social learning theory by Albert Bandura. For example, kids often learn behaviors like how to
-                        talk,
-                        walk, or even how to behave in certain situations just by watching their parents or peers.
-                        <video class="my-5 bg-white w-full h-[20rem]" controls>
+                        of observational learning theory by Albert Bandura. For example, kids often learn behaviors like how to
+                        talk, walk, or even how to behave in certain situations just by watching their parents or peers.
+                    </li>
+                    <div class="my-5">
+                        <video id="banduras-experiment" class="bg-white w-full h-[20rem]" controls>
                             <source src="./src/res/banduras-doll-experiement.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
-                    </li>
+                        <p class="text-sm">Bandura's Doll Experiment - Observational Learning</p>
+                    </div>
                 </ol>
                 <p class="mt-4 text-lg">
                     These learning theories help us understand everything from how babies learn to talk to how we get
-                    better
-                    at sports or schoolwork. It's pretty wild how much we can learn just by observing others or
-                    experiencing
-                    rewards and punishments!
+                    better at sports or schoolwork. It's pretty wild how much we can learn just by observing others or
+                    experiencing rewards and punishments!
                 </p>
                 <h2 class="mt-5 font-black text-3xl">
                     What's Going On Inside Our Heads (Biologically) When We Remember Stuff?
                 </h2>
                 <p class="mt-4 text-lg">
                     Moving on to memory, let's explore another question: <span class="font-black">What biological
-                        processes
-                        and disorders are related to memory?</span> Basically, what happens in our brains when we
-                    remember
-                    something, and what happens when memory goes wrong?
+                        processes and disorders are related to memory?</span> Basically, what happens in our brains when
+                    we remember something, and what happens when memory goes wrong?
                 </p>
                 <p class="mt-4 text-lg">
                     Memory isn't just some magic trick our brain does. There are actual biological processes involved.
-                    Here
-                    are a few:
+                    Here are a few:
                 </p>
                 <ol class="list-disc ml-5 mt-2 flex flex-col gap-2">
                     <li><strong>Synaptic Plasticity:</strong> This is the brain's ability to strengthen or weaken
@@ -409,46 +396,32 @@
                 </h2>
                 <p class="mt-4 text-lg">
                     Finally, let's tackle the big question about intelligence: <span class="font-black">How have
-                        measures
-                        and perceptions of intelligence changed over time?</span> What we think of as “intelligent” has
-                    changed a lot over the years.
+                        measures and perceptions of intelligence evolved over time?</span> And how do these theories
+                    apply to real-world situations like education or the workplace?
                 </p>
                 <p class="mt-4 text-lg">
-                    A long time ago, intelligence was seen as something you're just born with like a fixed thing. But
-                    now,
-                    people realize that intelligence is a lot more complex than just an IQ number. In fact, Howard
-                    Gardner's
-                    theory of <a href="https://www.verywellmind.com/gardners-theory-of-multiple-intelligences-2795161"
-                        class="font-black text-yellow-500 underline underline-offset-[2px] decoration-1 hover:decoration-2 transition-all">multiple
-                        intelligences</a> suggests that there are actually several different kinds of intelligence.
-                    Here's a
-                    quick list of them:
+                    For years, intelligence has been measured through IQ tests, but that's only one way to measure it.
+                    The theory of <a href="https://www.verywellmind.com/gardners-theory-of-multiple-intelligences-2795161" class="font-black text-yellow-500 underline underline-offset-[2px] decoration-1 hover:decoration-2 transition-all">multiple intelligences</a> says there are different types of intelligence,
+                    like:
                 </p>
                 <ol class="list-disc ml-5 mt-2 flex flex-col gap-2">
-                    <li><strong>Linguistic:</strong> The ability to use language effectively.</li>
-                    <li><strong>Logical-Mathematical:</strong> The ability to reason logically and solve math problems.
+                    <li><strong>Linguistic Intelligence:</strong> The ability to think and reason using words.</li>
+                    <li><strong>Logical-Mathematical Intelligence:</strong> The ability to think logically and solve
+                        mathematical problems.</li>
+                    <li><strong>Spatial Intelligence:</strong> The ability to visualize with the mind's eye.</li>
+                    <li><strong>Bodily-Kinesthetic Intelligence:</strong> The ability to control bodily movements.</li>
+                    <li><strong>Musical Intelligence:</strong> The ability to recognize and create musical patterns.
                     </li>
-                    <li><strong>Spatial:</strong> The ability to think in three dimensions (like architects or artists).
+                    <li><strong>Interpersonal Intelligence:</strong> The ability to understand and interact with others.
                     </li>
-                    <li><strong>Bodily-Kinesthetic:</strong> The ability to use your body effectively (think athletes or
-                        dancers).</li>
-                    <li><strong>Musical:</strong> The ability to create, appreciate, and perform music.</li>
-                    <li><strong>Interpersonal:</strong> The ability to understand and relate to other people.</li>
-                    <li><strong>Intrapersonal:</strong> The ability to understand yourself and your own emotions.</li>
-                    <li><strong>Naturalistic:</strong> The ability to understand the natural world (like biologists or
-                        environmentalists).</li>
+                    <li><strong>Intrapersonal Intelligence:</strong> The ability to understand oneself and one's
+                        thoughts and feelings.</li>
+                    <li><strong>Naturalistic Intelligence:</strong> The ability to observe, appreciate, and understand
+                        the natural world.</li>
                 </ol>
                 <p class="mt-4 text-lg">
-                    Today, intelligence is viewed as a combination of many different abilities, not just a number on a
-                    test.
-                    Some newer ideas include things like emotional intelligence (how well we understand and manage
-                    emotions)
-                    and cultural intelligence (how we interact with people from different cultures).
-                </p>
-                <p class="mt-4 text-lg">
-                    So, as we can see, the way we think about intelligence has evolved a lot. It's no longer just about
-                    who's the smartest on a test. It's about recognizing and developing all kinds of talents and
-                    abilities!
+                    Intelligence isn't just about how well you do on a standardized test, it's about how you think,
+                    solve problems, and relate to the world around you.
                 </p>
                 <!-- END OF DRIVING QUESTIONS -->
                 <!-- START OF BENCHMARK 1 -->
@@ -469,26 +442,37 @@
                 <p class="mt-2">Socially, most interactions are with family and peers. Kids at this stage are kind of
                     egocentric but slowly start to get the hang of empathy and cooperation as they grow up.</p>
                 <p class="mt-2 font-black">Example from MY LIFE:</p>
-                <p>So, as a kid, I was pretty rowdy - like, ADHD-level hyperactive. Honestly, I could never
-                    sit still, which made school a nightmare. My grades were terrible, and I needed extra help like an
-                    IEP. I barely tried to make friends, so I spent most of my elementary years pretty lonely. But I was
-                    active - did soccer at the start - and would always break the new toys I got, like, for no reason.
-                    And I had this impulse control issue where if I thought of something random (like breaking a toy
-                    car), I'd just go with it.</p>
-                <p class="mt-2">Things got worse when I started hoarding food at the cafeteria. Yeah, that's right - I
-                    started to gain a ton of weight. The ADHD meds didn't really help either, no matter how many patches
-                    or pills I tried. My parents struggled with it, but I don't think they ever really understood what
-                    was going on. And, honestly, I didn't either.</p>
-                <p class="mt-2">But then, just before my last year of elementary school, something flipped. Out of
-                    nowhere, I just stopped being a problem. My behavior changed, and I started getting better grades. I
-                    made friends, barely got into trouble, and I stopped needing all the meds. Like, I just figured it
-                    out. I know it sounds crazy, but that's how it happened. I felt like a new person. And here I am,
-                    doing much better now.</p>
-                <p class="mt-2">In summary, I wasn't the easiest kid to raise, but my parents made sure I was taken care
-                    of. They were always there for me. But I still struggled with socializing, which followed me into
-                    middle school. I started with no friends, a bad rep, and I felt like I missed out on so much. Still,
-                    it got better over time. So, what did I learn from Erik Erikson's stages?</p>
-                <h3 class="mt-5 font-black text-3xl">What was gained/lost?</h3>
+                <div class="flex flex-row justify-between gap-10">
+                    <div class="float-left">
+                        <p>So, as a kid, I was pretty rowdy - like, ADHD-level hyperactive. Honestly, I could never
+                            sit still, which made school a nightmare. My grades were terrible, and I needed extra help like an
+                            IEP. I barely tried to make friends, so I spent most of my elementary 
+                            <!--START IMAGE-->
+                            <div class="flex flex-col float-right pt-2 pl-2 pb-2">
+                                <img class="w-[50vh]" src="./src/res/6-self.jpg">
+                                <span class="text-sm">6-year-old me at our old house making a mud pie.</span>
+                            </div>
+                            <!--END IMAGE-->
+                            years pretty lonely. But I was
+                            active - did soccer at the start - and would always break the new toys I got, like, for no reason.
+                            And I had this impulse control issue where if I thought of something random (like breaking a toy
+                            car), I'd just go with it.</p>
+                        <p class="mt-2">Things got worse when I started hoarding food at the cafeteria. Yeah, that's right - I
+                            started to gain a ton of weight. The ADHD meds didn't really help either, no matter how many patches
+                            or pills I tried. My parents struggled with it, but I don't think they ever really understood what
+                            was going on. And, honestly, I didn't either.</p>
+                        <p class="mt-2">But then, just before my last year of elementary school, something flipped. Out of
+                            nowhere, I just stopped being a problem. My behavior changed, and I started getting better grades. I
+                            made friends, barely got into trouble, and I stopped needing all the meds. Like, I just figured it
+                            out. I know it sounds crazy, but that's how it happened. I felt like a new person. And here I am,
+                            doing much better now.</p>
+                        <p class="mt-2">In summary, I wasn't the easiest kid to raise, but my parents made sure I was taken care
+                            of. They were always there for me. But I still struggled with socializing, which followed me into
+                            middle school. I started with no friends, a bad rep, and I felt like I missed out on so much. Still,
+                            it got better over time. So, what did I learn from Erik Erikson's stages?</p>
+                    </div>
+                </div>
+                <h3 class="mt-5 font-black text-2xl">What was gained/lost?</h3>
                 <ul class="list-disc ml-5 mt-2">
                     <li><span class="font-black">Basic Trust vs. Mistrust</span>: I trusted my parents completely, and
                         they trusted me to sort things out. That trust made me feel like I could handle things with
@@ -505,22 +489,32 @@
                     </li>
                 </ul>
                 <h3 class="mt-5 font-black text-3xl">Adolescence (13-19)</h3>
-                <p class="mt-2">Adolescence is when things start to change big time. It's all about finding your
-                    independence, figuring out who you are, and a ton of emotional ups and downs.</p>
-                <p class="mt-2">In my case, after I graduated elementary school, I had this weird “snap” in my
-                    personality. I just changed from being that chaotic kid into someone who cared more about school and
-                    had a better attitude. Middle school was a huge improvement. My grades were better, I made friends,
-                    and I finally understood how to handle schoolwork. I stopped doing all the stuff that got me into
-                    trouble in elementary school. It was like the switch flipped. </p>
-                <p class="mt-2">Still, high school wasn't perfect. Freshman year was tough because I didn't care much
-                    about getting good grades. But by sophomore year, everything fell into place. I learned to focus and
-                    control my actions. I turned into a much more normal, “average” student. That was honestly a huge
-                    win for me.</p>
-                <p class="mt-2">In summary: I regained a lot of the qualities I missed during childhood. My ability to
-                    focus improved, I became less selfish, and I started caring about others more - even animals! I
-                    learned how to trust teachers and accept authority. The snap' really saved my life. Without it, I
-                    don't think I'd be where I am today.</p>
-                <p class="mt-2">What did I gain based on Erikson's stages during adolescence?</p>
+                <div class="float-left">
+                    <p class="mt-2">Adolescence is when things start to change big time. It's all about finding your
+                        independence, figuring out who you are, and a ton of emotional ups and downs.</p>
+                    <p class="mb-4 mt-7 font-black">Example from MY LIFE:</p>
+                    <p class="mt-2">In my case, after I graduated elementary school, I had this weird “snap” in my
+                        personality. I just changed from being that chaotic kid
+                        <!--START IMAGE-->
+                        <div class="flex flex-col float-right pt-2 pl-2 pb-2">
+                            <img class="w-[28vh]" src="./src/res/12-self.jpg">
+                            <span class="text-sm w-[27.5ch]">12-year-old me at Elmwood holding an A/B honor roll certificate.</span>
+                        </div>
+                        <!--END IMAGE-->
+                        into someone who cared more about school and
+                        had a better attitude. Middle school was a huge improvement. My grades were better, I made friends,
+                        and I finally understood how to handle schoolwork. I stopped doing all the stuff that got me into
+                        trouble in elementary school. It was like the switch flipped. </p>
+                    <p class="mt-2">Still, high school wasn't perfect. Freshman year was tough because I didn't care much
+                        about getting good grades. But by sophomore year, everything fell into place. I learned to focus and
+                        control my actions. I turned into a much more normal, “average” student. That was honestly a huge
+                        win for me.</p>
+                    <p class="mt-2">In summary: I regained a lot of the qualities I missed during childhood. My ability to
+                        focus improved, I became less selfish, and I started caring about others more - even animals! I
+                        learned how to trust teachers and accept authority. The snap' really saved my life. Without it, I
+                        don't think I'd be where I am today.</p>
+                </div>
+                <h3 class="mt-5 font-black text-2xl">What was gained/lost?</h3>
                 <ul class="list-disc ml-5 mt-2">
                     <li><span class="font-black">Identity vs. Role Confusion</span>: I figured out who I am. I know what
                         I'm capable of now and where I want to go in life. Still a bit worried about the future, but not
@@ -534,7 +528,7 @@
                 <p class="mt-2">I can't speak from personal experience yet, but I've thought about how the next stages
                     will likely play out for me. In adulthood, I see myself focusing on my career in IT, building
                     relationships, and growing into a more well-rounded person.</p>
-                <p class="mt-2">Here's what I think I'll gain based on Erikson's stages:</p>
+                <h3 class="mt-5 font-black text-2xl">What would be gained/lost?</h3>
                 <ul class="list-disc ml-5 mt-2">
                     <li><span class="font-black">Intimacy vs. Isolation</span>: I believe I'll have solid relationships
                         with friends and family, but love might not come until later in life. I expect to have moments
@@ -547,7 +541,7 @@
                 <p class="mt-2">Again, not speaking from experience here, but when I get older, I hope I'll look back on
                     my life and feel good about what I've accomplished. Hopefully, I'll have a family, a career I'm
                     proud of, and a life full of experiences.</p>
-                <p class="mt-2">What do I hope to gain from this stage, based on Erikson's stages?</p>
+                <h3 class="mt-5 font-black text-2xl">What would be gained/lost?</h3>
                 <ul class="list-disc ml-5 mt-2">
                     <li><span class="font-black">Ego Integrity vs. Despair</span>: I hope I'll feel satisfied with what
                         I've done and proud of my life. My only regret so far is how I acted as a kid, but that's
@@ -640,7 +634,7 @@
                     <h3 class="mt-5 font-black text-3xl">Research Tasks:</h3>
                     <ul class="list-disc ml-5 mt-2">
                         <li>Examine key learning theories, including classical conditioning, operant conditioning, and
-                            social learning theory.</li>
+                            observational learning theory.</li>
                         <li>Analyze experiments and case studies that illustrate these concepts.</li>
                     </ul>
                 </div>
@@ -648,29 +642,53 @@
                 <p class="mt-2">Classical conditioning is a learning process in which a neutral stimulus becomes
                     associated with a stimulus that naturally produces a response. Over time, the neutral stimulus
                     starts to evoke the same response on its own.</p>
-                <p class="mt-2">Key Figure: <span class="font-black">Ivan Pavlov</span> (Pavlov's Dogs experiment)</p>
+                <p class="mt-2 flex flex-row gap-1">
+                    Key Figure: 
+                    <span class="font-black">Ivan Pavlov</span> (Pavlov's Dogs experiment)
+                    <a href="#pavlovs-experiement">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-[20px] fill-black hover:fill-yellow-500 cursor-pointer" viewBox="0 -960 960 960">
+                            <path xmlns="http://www.w3.org/2000/svg" d="m332-452 70 70q19 19 19 47.5T402-287q-20 20-48 19.5T307-287L122-472q-20-20-20-48.5t20-48.5l185-185q20-19 47.5-19t47.5 19q19 20 19.5 48T402-659l-70 71h325q95 0 162 67t67 162v137q0 29-19.5 48.5T818-154q-28 0-48-19.5T750-222v-137q0-40-27-66.5T657-452H332Z"/>
+                        </svg>
+                    </a>
+                </p>
                 <p class="mt-2">In Pavlov's famous experiment, he conditioned dogs to salivate in response to a neutral
                     stimulus (a bell) by repeatedly pairing it with food. Over time, the sound of the bell alone would
                     cause the dogs to salivate, even without the presence of food.</p>
                 <p class="mt-2">This made me think of my own childhood. I used to rush downstairs whenever I heard the
                     front door open because my dad always brought food home. The sound of the door became a “trigger”
                     for food. Even after he stopped bringing food, I still ran downstairs whenever I heard the door
-                    open—just like Pavlov's experiment in real life!</p>
+                    open, just like Pavlov's experiment in real life!</p>
                 <h3 class="mt-5 font-black text-3xl">Operant Conditioning</h3>
                 <p class="mt-2">Operant conditioning is a type of learning where behavior is controlled by consequences
                     (reinforcement or punishment).</p>
-                <p class="mt-2">Key Figure: <span class="font-black">B.F. Skinner</span> (Skinner's Box)</p>
+                <p class="mt-2 flex flex-row gap-1">
+                    Key Figure: 
+                    <span class="font-black">B.F. Skinner</span> (Skinner's Box)
+                    <a href="#skinners-experiment">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-[20px] fill-black hover:fill-yellow-500 cursor-pointer" viewBox="0 -960 960 960">
+                            <path xmlns="http://www.w3.org/2000/svg" d="m332-452 70 70q19 19 19 47.5T402-287q-20 20-48 19.5T307-287L122-472q-20-20-20-48.5t20-48.5l185-185q20-19 47.5-19t47.5 19q19 20 19.5 48T402-659l-70 71h325q95 0 162 67t67 162v137q0 29-19.5 48.5T818-154q-28 0-48-19.5T750-222v-137q0-40-27-66.5T657-452H332Z"/>
+                        </svg>
+                    </a>
+                </p>
                 <p class="mt-2">In Skinner's experiment, he placed rats in a box where they could receive food for
                     pressing a lever or button. This positive reinforcement strengthened the behavior of pressing the
                     lever, encouraging the rats to repeat the action.</p>
                 <p class="mt-2">This concept reminds me of when I used to mow the lawn for money. I was motivated by the
                     reward (money), but once winter came and I couldn't mow anymore, I lost interest. The
                     “reinforcement” worked as long as the reward was present, just like Skinner's experiment.</p>
-                <h3 class="mt-5 font-black text-3xl">Social Learning Theory</h3>
-                <p class="mt-2">Social learning theory suggests that people can learn by observing others, especially in
+                <h3 class="mt-5 font-black text-3xl">Observational Learning Theory</h3>
+                <p class="mt-2">Observational learning theory suggests that people can learn by observing others, especially in
                     social contexts, without direct reinforcement or punishment. People tend to imitate behaviors they
                     see around them.</p>
-                <p class="mt-2">Key Figure: <span class="font-black">Albert Bandura</span> (Bobo Doll Experiment)</p>
+                <p class="mt-2 flex flex-row gap-1">
+                    Key Figure: 
+                    <span class="font-black">Albert Bandura</span> (Bobo Doll Experiment)
+                    <a href="#banduras-experiment">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-[20px] fill-black hover:fill-yellow-500 cursor-pointer" viewBox="0 -960 960 960">
+                            <path xmlns="http://www.w3.org/2000/svg" d="m332-452 70 70q19 19 19 47.5T402-287q-20 20-48 19.5T307-287L122-472q-20-20-20-48.5t20-48.5l185-185q20-19 47.5-19t47.5 19q19 20 19.5 48T402-659l-70 71h325q95 0 162 67t67 162v137q0 29-19.5 48.5T818-154q-28 0-48-19.5T750-222v-137q0-40-27-66.5T657-452H332Z"/>
+                        </svg>
+                    </a>
+                </p>
                 <p class="mt-2">In Bandura's experiment, children who watched an adult behaving aggressively toward a
                     Bobo doll were more likely to imitate that behavior, even when there was no reinforcement involved.
                     This shows that learning can occur through observation alone.</p>
@@ -683,23 +701,24 @@
                 <div class="mt-10 text-center">
                     <h3 class="font-black text-3xl">Comparison of Learning Theories</h3>
                     <p class="mt-2">The following Venn diagram illustrates the similarities and differences between
-                        Classical Conditioning, Operant Conditioning, and Social Learning Theory.</p>
+                        Classical Conditioning, Operant Conditioning, and Observational Learning Theory.</p>
                     <div class="mt-5">
                         <img src="./src/res/venn-diagram.png" alt="Venn Diagram comparing learning theories"
                             class="mx-auto max-w-full h-auto" />
                     </div>
                 </div>
                 <h3 class="mt-5 font-black text-3xl">Implications of These Theories in Real-World Settings</h3>
-                <p class="mt-2">These theories aren't just limited to experiments—they appear in real-life situations
+                <p class="mt-2">These theories aren't just limited to experiments, they appear in real-life situations
                     all the time. Pavlov's classical conditioning, Skinner's operant conditioning, and Bandura's social
                     learning theory are all relevant in everyday life. Whether it's training a pet (classical
                     conditioning), rewarding children for tasks (operant conditioning), or people imitating behaviors
-                    they see in others (social learning), these principles shape how we learn from our environment.</p>
+                    they see in others (observational learning), these principles shape how we learn from our environment.</p>
                 <!-- END OF BENCHMARK 2 -->
                 <!-- START OF BENCHMARK 3 -->
                 <div class="p-5 bg-black text-white mt-5 border-b-[10px] border-yellow-500">
                     <h2 class="font-black text-5xl">Week 3: Benchmark 3 Memory and Intelligence</h2>
-                    <p class="mt-3 text-lg">Objective: Explain biological processes related to memory and evaluate measures
+                    <p class="mt-3 text-lg">Objective: Explain biological processes related to memory and evaluate
+                        measures
                         of intelligence.</p>
                 </div>
                 <h3 class="font-semibold text-3xl">Memory</h3>
@@ -803,121 +822,145 @@
             </div>
             <!-- END OF BENCHMARK 3 -->
             <!--mla sources used throughout the article-->
-            <div class="mt-8">
+            <div class="mt-8 select-none">
                 <div class="font-black text-2xl mb-3 pb-1 border-b border-gray-400">References</div>
                 <div class="text-sm font-thin">
                     <ul class="flex flex-col gap-5">
-                        <li class="mb-2 border-b border-opacity-40 border-gray-400 font-semibold flex flex-col justify-between">
+                        <li
+                            class="mb-2 border-b border-opacity-40 border-gray-400 font-semibold flex flex-col justify-between">
                             <div class="flex flex-row gap-2">
                                 <span class="font-black text-2xl select-none">1.</span>
-                                <span>Children & Society. <i>Life-Span Development</i>, AMSCO Advanced Placement, 2024.</span>
+                                <span>Children & Society. <i>Life-Span Development</i>, AMSCO Advanced Placement,
+                                    2024.</span>
                             </div>
                             <div class="flex flex-row gap-2 justify-end items-end my-5">
-                                <a href="https://inst-fs-iad-prod.inscloudgate.net/files/1b9ca1d7-db1f-4072-9730-3cf914b0a5d0/AMSCO%C2%AE%20Advanced%20Placement%C2%AE.pdf?download=1&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MzE5OTYzNTIsInVzZXJfaWQiOiIyNjY0MzAwMDAwMDAwMDA4NDAiLCJyZXNvdXJjZSI6Ii9maWxlcy8xYjljYTFkNy1kYjFmLTQwNzItOTczMC0zY2Y5MTRiMGE1ZDAvQU1TQ08lQzIlQUUlMjBBZHZhbmNlZCUyMFBsYWNlbWVudCVDMiVBRS5wZGYiLCJqdGkiOiIyNDU2ZGEyZi1hZmM3LTQ1MDEtYWE5OC02MzJlODk2ZmEyYzgiLCJob3N0IjoicnBzLmluc3RydWN0dXJlLmNvbSIsIm9yaWdpbmFsX3VybCI6Imh0dHBzOi8vYTI2NjQzLTk5My5jbHVzdGVyMjM4LmNhbnZhcy11c2VyLWNvbnRlbnQuY29tL2NvdXJzZXMvMjY2NDN-NjYzL2ZpbGVzLzI2NjQzfjk5My9jb3Vyc2UlMjBmaWxlcy9BTVNDTyVDMiVBRSUyMEFkdmFuY2VkJTIwUGxhY2VtZW50JUMyJUFFLnBkZj9kb3dubG9hZF9mcmQ9MVx1MDAyNm5vX2NhY2hlPXRydWVcdTAwMjZyZWRpcmVjdD10cnVlXHUwMDI2c2ZfdmVyaWZpZXI9ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6VXhNaUo5LmV5SjFjMlZ5WDJsa0lqb2lNalkyTkRNd01EQXdNREF3TURBd09EUXdJaXdpY205dmRGOWhZMk52ZFc1MFgybGtJam9pTWpZMk5ETXdNREF3TURBd01EQXdNREF4SWl3aWIyRjFkR2hmYUc5emRDSTZJbkp3Y3k1cGJuTjBjblZqZEhWeVpTNWpiMjBpTENKeVpYUjFjbTVmZFhKc0lqcHVkV3hzTENKbVlXeHNZbUZqYTE5MWNtd2lPaUpvZEhSd2N6b3ZMM0p3Y3k1cGJuTjBjblZqZEhWeVpTNWpiMjB2WTI5MWNuTmxjeTgyTmpNdlptbHNaWE12T1RrekwyUnZkMjVzYjJGa1AyUnZkMjVzYjJGa1gyWnlaRDB4WEhVd01ESTJabUZzYkdKaFkydGZkSE05TVRjek1qQXpOekF5TmlJc0ltVjRjQ0k2TVRjek1qQXpOek15Tm4wLlozOWtHbk1qSUI5eEdLaDJkWGo2NzFyZ3FNMTdQVF9pNEVNYkhsTWdfWUdXU3NCYWs3OGFRczNwSWtkVnFFblVxd01kSktwbzRzUHpYX09Ga29sR01BIiwiZXhwIjoxNzMyMDgyNzUyfQ.Hl3eHzypAhlsgjVD6m-Baghadhptkup5M2C2mC8-PkFori98CqRcJIGJPF-k7SQa-2WPEWCr_BQ0m9M2c6HS9Q" class="font-black italic text-yellow-500 underline underline-offset-[2px] decoration-1 hover:decoration-2 transition-all">AMSCO School Publications</a>
+                                <a href="https://inst-fs-iad-prod.inscloudgate.net/files/1b9ca1d7-db1f-4072-9730-3cf914b0a5d0/AMSCO%C2%AE%20Advanced%20Placement%C2%AE.pdf?download=1&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MzE5OTYzNTIsInVzZXJfaWQiOiIyNjY0MzAwMDAwMDAwMDA4NDAiLCJyZXNvdXJjZSI6Ii9maWxlcy8xYjljYTFkNy1kYjFmLTQwNzItOTczMC0zY2Y5MTRiMGE1ZDAvQU1TQ08lQzIlQUUlMjBBZHZhbmNlZCUyMFBsYWNlbWVudCVDMiVBRS5wZGYiLCJqdGkiOiIyNDU2ZGEyZi1hZmM3LTQ1MDEtYWE5OC02MzJlODk2ZmEyYzgiLCJob3N0IjoicnBzLmluc3RydWN0dXJlLmNvbSIsIm9yaWdpbmFsX3VybCI6Imh0dHBzOi8vYTI2NjQzLTk5My5jbHVzdGVyMjM4LmNhbnZhcy11c2VyLWNvbnRlbnQuY29tL2NvdXJzZXMvMjY2NDN-NjYzL2ZpbGVzLzI2NjQzfjk5My9jb3Vyc2UlMjBmaWxlcy9BTVNDTyVDMiVBRSUyMEFkdmFuY2VkJTIwUGxhY2VtZW50JUMyJUFFLnBkZj9kb3dubG9hZF9mcmQ9MVx1MDAyNm5vX2NhY2hlPXRydWVcdTAwMjZyZWRpcmVjdD10cnVlXHUwMDI2c2ZfdmVyaWZpZXI9ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6VXhNaUo5LmV5SjFjMlZ5WDJsa0lqb2lNalkyTkRNd01EQXdNREF3TURBd09EUXdJaXdpY205dmRGOWhZMk52ZFc1MFgybGtJam9pTWpZMk5ETXdNREF3TURBd01EQXdNREF4SWl3aWIyRjFkR2hmYUc5emRDSTZJbkp3Y3k1cGJuTjBjblZqZEhWeVpTNWpiMjBpTENKeVpYUjFjbTVmZFhKc0lqcHVkV3hzTENKbVlXeHNZbUZqYTE5MWNtd2lPaUpvZEhSd2N6b3ZMM0p3Y3k1cGJuTjBjblZqZEhWeVpTNWpiMjB2WTI5MWNuTmxjeTgyTmpNdlptbHNaWE12T1RrekwyUnZkMjVzYjJGa1AyUnZkMjVzYjJGa1gyWnlaRDB4WEhVd01ESTJabUZzYkdKaFkydGZkSE05TVRjek1qQXpOekF5TmlJc0ltVjRjQ0k2TVRjek1qQXpOek15Tm4wLlozOWtHbk1qSUI5eEdLaDJkWGo2NzFyZ3FNMTdQVF9pNEVNYkhsTWdfWUdXU3NCYWs3OGFRczNwSWtkVnFFblVxd01kSktwbzRzUHpYX09Ga29sR01BIiwiZXhwIjoxNzMyMDgyNzUyfQ.Hl3eHzypAhlsgjVD6m-Baghadhptkup5M2C2mC8-PkFori98CqRcJIGJPF-k7SQa-2WPEWCr_BQ0m9M2c6HS9Q"
+                                    class="font-black italic text-yellow-500 underline underline-offset-[2px] decoration-1 hover:decoration-2 transition-all">AMSCO
+                                    School Publications</a>
                             </div>
                         </li>
-                        <li class="mb-2 border-b border-opacity-40 border-gray-400 font-semibold flex flex-col justify-between">
+                        <li
+                            class="mb-2 border-b border-opacity-40 border-gray-400 font-semibold flex flex-col justify-between">
                             <div class="flex flex-row gap-2">
                                 <span class="font-black text-2xl select-none">2.</span>
                                 <span>The Psychology Notes HQ. <i>GoodTherapy</i>, 2024.</span>
                             </div>
                             <div class="flex flex-row gap-2 justify-end items-end my-5">
-                                <a href="https://www.choosingtherapy.com/goodtherapy-review/" class="font-black italic text-yellow-500 underline underline-offset-[2px] decoration-1 hover:decoration-2 transition-all">ChoosingTherapy</a>
+                                <a href="https://www.choosingtherapy.com/goodtherapy-review/"
+                                    class="font-black italic text-yellow-500 underline underline-offset-[2px] decoration-1 hover:decoration-2 transition-all">ChoosingTherapy</a>
                             </div>
                         </li>
-                        <li class="mb-2 border-b border-opacity-40 border-gray-400 font-semibold flex flex-col justify-between">
+                        <li
+                            class="mb-2 border-b border-opacity-40 border-gray-400 font-semibold flex flex-col justify-between">
                             <div class="flex flex-row gap-2">
                                 <span class="font-black text-2xl select-none">3.</span>
                                 <span>Pavlov, Ivan. <i>Conditioned Reflexes</i>. Oxford University Press, 1927.</span>
                             </div>
                             <div class="flex flex-row gap-2 justify-end items-end my-5">
-                                <a href="https://www.simplypsychology.org/pavlov.html" class="font-black italic text-yellow-500 underline underline-offset-[2px] decoration-1 hover:decoration-2 transition-all">SimplyPsychology</a>
+                                <a href="https://www.simplypsychology.org/pavlov.html"
+                                    class="font-black italic text-yellow-500 underline underline-offset-[2px] decoration-1 hover:decoration-2 transition-all">SimplyPsychology</a>
                             </div>
                         </li>
-                        <li class="mb-2 border-b border-opacity-40 border-gray-400 font-semibold flex flex-col justify-between">
+                        <li
+                            class="mb-2 border-b border-opacity-40 border-gray-400 font-semibold flex flex-col justify-between">
                             <div class="flex flex-row gap-2">
                                 <span class="font-black text-2xl select-none">4.</span>
-                                <span>Skinner, B.F. <i>The Behavior of Organisms</i>. Appleton-Century-Crofts, 1938.</span>
+                                <span>Skinner, B.F. <i>The Behavior of Organisms</i>. Appleton-Century-Crofts,
+                                    1938.</span>
                             </div>
                             <div class="flex flex-row gap-2 justify-end items-end my-5">
-                                <a href="https://www.researchgate.net/publication/313181463_The_behavior_of_organisms_-_Skinner_BF" class="font-black italic text-yellow-500 underline underline-offset-[2px] decoration-1 hover:decoration-2 transition-all">ResearchGate</a>
+                                <a href="https://www.researchgate.net/publication/313181463_The_behavior_of_organisms_-_Skinner_BF"
+                                    class="font-black italic text-yellow-500 underline underline-offset-[2px] decoration-1 hover:decoration-2 transition-all">ResearchGate</a>
                             </div>
                         </li>
-                        <li class="mb-2 border-b border-opacity-40 border-gray-400 font-semibold flex flex-col justify-between">
+                        <li
+                            class="mb-2 border-b border-opacity-40 border-gray-400 font-semibold flex flex-col justify-between">
                             <div class="flex flex-row gap-2">
                                 <span class="font-black text-2xl select-none">5.</span>
-                                <span>Gentile, Douglas A., et al. “Video Games & Aggressive Thoughts.” <i>Journal of Personality and Social Psychology</i>, vol. 102, no. 4, 2012, pp. 803-816.</span>
+                                <span>Gentile, Douglas A., et al. “Video Games & Aggressive Thoughts.” <i>Journal of
+                                        Personality and Social Psychology</i>, vol. 102, no. 4, 2012, pp.
+                                    803-816.</span>
                             </div>
                             <div class="flex flex-row gap-2 justify-end items-end my-5">
-                                <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6790562/" class="font-black italic text-yellow-500 underline underline-offset-[2px] decoration-1 hover:decoration-2 transition-all">National Library of Medicine</a>
+                                <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6790562/"
+                                    class="font-black italic text-yellow-500 underline underline-offset-[2px] decoration-1 hover:decoration-2 transition-all">National
+                                    Library of Medicine</a>
                             </div>
                         </li>
-                        <li class="mb-2 border-b border-opacity-40 border-gray-400 font-semibold flex flex-col justify-between">
+                        <li
+                            class="mb-2 border-b border-opacity-40 border-gray-400 font-semibold flex flex-col justify-between">
                             <div class="flex flex-row gap-2">
                                 <span class="font-black text-2xl select-none">6.</span>
-                                <span>Gardner, Howard. <i>Frames of Mind: The Theory of Multiple Intelligences</i>. Basic Books, 1983.</span>
+                                <span>Gardner, Howard. <i>Frames of Mind: The Theory of Multiple Intelligences</i>.
+                                    Basic Books, 1983.</span>
                             </div>
                             <div class="flex flex-row gap-2 justify-end items-end my-5">
-                                <a href="https://www.researchgate.net/publication/317388610_The_Theory_of_Multiple_Intelligences" class="font-black italic text-yellow-500 underline underline-offset-[2px] decoration-1 hover:decoration-2 transition-all">ResearchGate</a>
+                                <a href="https://www.researchgate.net/publication/317388610_The_Theory_of_Multiple_Intelligences"
+                                    class="font-black italic text-yellow-500 underline underline-offset-[2px] decoration-1 hover:decoration-2 transition-all">ResearchGate</a>
                             </div>
                         </li>
-                        <li class="mb-2 border-b border-opacity-40 border-gray-400 font-semibold flex flex-col justify-between">
+                        <li
+                            class="mb-2 border-b border-opacity-40 border-gray-400 font-semibold flex flex-col justify-between">
                             <div class="flex flex-row gap-2">
                                 <span class="font-black text-2xl select-none">7.</span>
-                                <span>Hutchins, Edwin. <i>Collective Wisdom: Principles and Mechanisms</i>. Cambridge University Press, 2012.</span>
+                                <span>Hutchins, Edwin. <i>Collective Wisdom: Principles and Mechanisms</i>. Cambridge
+                                    University Press, 2012.</span>
                             </div>
                             <div class="flex flex-row gap-2 justify-end items-end my-5">
-                                <a href="https://www.academia.edu/6130223/Collective_Wisdom_Principles_and_Mechanisms_Cambridge_Cambridge_University_Press_2012_" class="font-black italic text-yellow-500 underline underline-offset-[2px] decoration-1 hover:decoration-2 transition-all">Academia</a>
+                                <a href="https://www.academia.edu/6130223/Collective_Wisdom_Principles_and_Mechanisms_Cambridge_Cambridge_University_Press_2012_"
+                                    class="font-black italic text-yellow-500 underline underline-offset-[2px] decoration-1 hover:decoration-2 transition-all">Academia</a>
                             </div>
                         </li>
                     </ul>
                 </div>
             </div>
             <!--latest articles related to article-->
-            <div class="mt-8 mb-10">
+            <div class="mt-8 mb-10 select-none">
                 <h2 class="font-semibold text-2xl">Latest on:</h2>
                 <div class="flex flex-col gap-5">
                     <div class="flex flex-row gap-5 p-2">
-                        <a class="cursor-pointer text-yellow-500 underline underline-offset-[2px] decoration-1 hover:decoration-2 transition-all">Human Behavior</a>
+                        <a
+                            class="cursor-pointer text-yellow-500 underline underline-offset-[2px] decoration-1 hover:decoration-2 transition-all">Human
+                            Behavior</a>
                         <a class="cursor-pointer">Psychological</a>
                         <a class="cursor-pointer">Blog</a>
                     </div>
                     <div class="flex flex-row gap-5">
                         <div class="flex flex-col gap-5 group w-[20ch] cursor-pointer">
-                            <img class="shadow-xl" src="https://images.nature.com/w140h79/magazine-assets/d41586-024-03674-x/d41586-024-03674-x_27711714.jpg">
-                            <a class="text-yellow-500 underline underline-offset-[2px] decoration-1 group-hover:decoration-2 transition-all">Why we are all lab rats in the digital world</a>
-                            <div class="flex flex-row">
+                            <img class="shadow-xl"
+                                src="https://images.nature.com/w140h79/magazine-assets/d41586-024-03674-x/d41586-024-03674-x_27711714.jpg">
+                            <a
+                                class="text-yellow-500 underline underline-offset-[2px] decoration-1 group-hover:decoration-2 transition-all">Why
+                                we are all lab rats in the digital world</a>
+                            <div class="flex flex-row items-center">
                                 <div class="text-[10px] pr-2 border-r border-black font-semibold">WORLD VIEW</div>
                                 <div class="text-[12px] pl-2">Nov 14th 24</div>
                             </div>
                         </div>
                         <div class="flex flex-col gap-5 group w-[20ch] cursor-pointer">
-                            <img class="shadow-xl" src="https://images.nature.com/w140h79/magazine-assets/d41586-024-03472-5/d41586-024-03472-5_27708842.jpg">
-                            <a class="text-yellow-500 underline underline-offset-[2px] decoration-1 group-hover:decoration-2 transition-all">How to recover when a climate disater destorys your city</a>
-                            <div class="flex flex-row">
+                            <img class="shadow-xl"
+                                src="https://images.nature.com/w140h79/magazine-assets/d41586-024-03472-5/d41586-024-03472-5_27708842.jpg">
+                            <a
+                                class="text-yellow-500 underline underline-offset-[2px] decoration-1 group-hover:decoration-2 transition-all">How
+                                to recover when a climate disater destorys your city</a>
+                            <div class="flex flex-row items-center">
                                 <div class="text-[10px] pr-2 border-r border-black font-semibold">NEWS FEATURE</div>
                                 <div class="text-[12px] pl-2">Oct 30th 24</div>
                             </div>
                         </div>
                         <div class="flex flex-col gap-5 group w-[20ch] cursor-pointer">
-                            <img class="shadow-xl" src="https://images.nature.com/w140h79/magazine-assets/d41586-024-03485-0/d41586-024-03485-0_27708730.jpg">
-                            <a class="text-yellow-500 underline underline-offset-[2px] decoration-1 group-hover:decoration-2 transition-all">Why we are all lab rats in the digital world</a>
-                            <div class="flex flex-row">
+                            <img class="shadow-xl"
+                                src="https://images.nature.com/w140h79/magazine-assets/d41586-024-03485-0/d41586-024-03485-0_27708730.jpg">
+                            <a
+                                class="text-yellow-500 underline underline-offset-[2px] decoration-1 group-hover:decoration-2 transition-all">A thaw in scientific relations could help clear the air in India and Pakistan</a>
+                            <div class="flex flex-row items-center">
                                 <div class="text-[10px] pr-2 border-r border-black font-semibold">EDITORIAL</div>
-                                <div class="text-[12px] pl-2">Oct 30th 24</div>
+                                <div class="text-[12px] pl-2">Nov 20th 24</div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!--
-            TODO:
-            * Finalize design
-            * Add images
-            * Fix URLS to go to actual urls
-            * Format (PLZ FORMAT)
-            * (optional) Add a "Go Back To Top" button
-            -->
         </div>
         <!--TABLE of CONTENTS-->
         <div class="w-max sticky top-5 h-full overflow-hidden mt-[100px] select-none mb-10">
@@ -946,117 +989,222 @@
             </div>
         </div>
     </div>
-    <!--chip overlay for light/dark mode, settings, and my github link-->
-    <div
-        class="py-2 px-[7px] w-fit bg-black flex flex-col gap-[5px] justify-between items-center rounded-[15px] fixed right-2 bottom-2 text-white shadow-xl select-none">
-        <a id="light-or-dark" class="cursor-pointer">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-[30px] fill-white" viewBox="0 -960 960 960">
-                <path
-                    d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm40-83q119-15 199.5-104.5T800-480q0-123-80.5-212.5T520-797v634Z" />
-            </svg>
-        </a>
-        <a id="open-settings" class="cursor-pointer">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-[27.89px] fill-white" viewBox="0 -960 960 960">
-                <path xmlns="http://www.w3.org/2000/svg"
-                    d="M405-34q-32 0-55-20t-27-51l-10-70q-3-2-6.5-4t-6.5-4l-65 27q-29 12-59 2.5T131-191L56-325q-16-27-10-57.5T77-431l54-42q0-2 .5-4t.5-4q0-2-.5-3.5t-.5-3.5l-53-40q-26-19-32-49.5T56-636l75-132q16-27 45-37t58 2l66 26q4-1 7.5-3t6.5-4l9-70q3-32 26.5-52.5T405-927h150q32 0 55.5 20.5T637-854l9 70 8 4 8 4 62-27q30-12 59.5-2t45.5 37l75 132q16 28 10 58.5T882-528l-55 40v8q0 2-.5 4t-.5 4l55 40q26 18 32 48.5T903-325l-76 134q-15 27-44.5 37t-59.5-2l-65-27q-3 1-6 3.5t-5 3.5l-10 71q-4 31-27 51t-55 20H405Zm73-296q63 0 107-44t44-107q0-62-44-106.5T478-632q-63 0-107 44.5T327-481q0 63 44 107t107 44Z" />
-            </svg>
-        </a>
-        <div class="bg-white py-[.5px] w-[1.5rem] my-[5px] rounded-full"></div>
-        <a href="https://github.com/wo-r">
-            <img class="rounded-full w-[25px] shadow-xl" src="https://avatars.githubusercontent.com/u/78428114?v=4">
-        </a>
-    </div>
     <!--website footer-->
-    <div class="bg-yellow-500 mt-10 w-full text-white flex flex-col select-none">
-        <div class="container mx-auto px-22 xl:px-36 py-7 flex flex-row justify-between items-center text-black">
+    <div class="bg-yellow-500 mt-10 w-full flex flex-col select-none" style="color: black;">
+        <div class="container mx-auto px-22 xl:px-36 py-7 flex flex-col items-center">
             <div class="grid grid-cols-4 grid-rows-2 gap-10 w-full">
                 <div>
-                    <h2 class="font-black text-1xl mb-5">About Nature Portfolio</h2>
+                    <h2 class="font-black text-1xl mb-5">About Wo-r Articles Portfolio</h2>
                     <div class="flex flex-col gap-2">
-                        <a href="#" class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">About us</a>
-                        <a href="#" class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Press releases</a>
-                        <a href="#" class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Press office</a>
-                        <a href="#" class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Contact us</a>
+                        <a
+                            class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">About
+                            us</a>
+                        <a
+                            class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Press
+                            releases</a>
+                        <a
+                            class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Press
+                            office</a>
+                        <a
+                            class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Contact
+                            us</a>
                     </div>
                 </div>
                 <div>
                     <h2 class="font-black text-1xl mb-5">Discover content</h2>
                     <div class="flex flex-col gap-2">
-                        <a href="#" class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Journals A-Z</a>
-                        <a href="#" class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Articles by subject</a>
-                        <a href="#" class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">protocols.io</a>
-                        <a href="#" class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Nature Index</a>
+                        <a
+                            class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Journals
+                            A-Z</a>
+                        <a
+                            class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Articles
+                            by subject</a>
+                        <a
+                            class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">protocols.io</a>
+                        <a
+                            class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Wo-r
+                            Articles Index</a>
                     </div>
                 </div>
                 <div>
                     <h2 class="font-black text-1xl mb-5">Publishing policies</h2>
                     <div class="flex flex-col gap-2">
-                        <a href="#" class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Nature portfolio policies</a>
-                        <a href="#" class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Open access</a>
+                        <a
+                            class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Wo-r
+                            Articles portfolio policies</a>
+                        <a
+                            class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Open
+                            access</a>
                     </div>
                 </div>
                 <div>
                     <h2 class="font-black text-1xl mb-5">Author & Researcher services</h2>
                     <div class="flex flex-col gap-2">
-                        <a href="#" class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Reprints & permissions</a>
-                        <a href="#" class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Research data</a>
-                        <a href="#" class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Language editing</a>
-                        <a href="#" class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Scientific editing</a>
-                        <a href="#" class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Nature Masterclasses</a>
-                        <a href="#" class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Research Solutions</a>
+                        <a
+                            class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Reprints
+                            & permissions</a>
+                        <a
+                            class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Research
+                            data</a>
+                        <a
+                            class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Language
+                            editing</a>
+                        <a
+                            class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Scientific
+                            editing</a>
+                        <a
+                            class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Wo-r
+                            Articles Masterclasses</a>
+                        <a
+                            class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Research
+                            Solutions</a>
                     </div>
                 </div>
                 <div>
                     <h2 class="font-black text-1xl mb-5">Libraries & institutions</h2>
                     <div class="flex flex-col gap-2">
-                        <a href="#" class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Librarian service & tools</a>
-                        <a href="#" class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Librarian portal</a>
-                        <a href="#" class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Open research</a>
-                        <a href="#" class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Recommend to library</a>
+                        <a
+                            class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Librarian
+                            service & tools</a>
+                        <a
+                            class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Librarian
+                            portal</a>
+                        <a
+                            class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Open
+                            research</a>
+                        <a
+                            class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Recommend
+                            to library</a>
                     </div>
                 </div>
                 <div>
                     <h2 class="font-black text-1xl mb-5">Advertising & partnerships</h2>
                     <div class="flex flex-col gap-2">
-                        <a href="#" class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Advertising</a>
-                        <a href="#" class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Partnerships & Services</a>
-                        <a href="#" class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Media kits</a>
-                        <a href="#" class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Branded content</a>
+                        <a
+                            class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Advertising</a>
+                        <a
+                            class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Partnerships
+                            & Services</a>
+                        <a
+                            class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Media
+                            kits</a>
+                        <a
+                            class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Branded
+                            content</a>
                     </div>
                 </div>
                 <div>
                     <h2 class="font-black text-1xl mb-5">Professional development</h2>
                     <div class="flex flex-col gap-2">
-                        <a href="#" class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Nature Careers</a>
-                        <a href="#" class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Nature Conferences</a>
+                        <a
+                            class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Wo-r
+                            Articles Careers</a>
+                        <a
+                            class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Wo-r
+                            Articles Conferences</a>
                     </div>
                 </div>
                 <div>
                     <h2 class="font-black text-1xl mb-5">Regional websites</h2>
                     <div class="flex flex-col gap-2">
-                        <a href="#" class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Nature Africa</a>
-                        <a href="#" class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Nature China</a>
-                        <a href="#" class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Nature India</a>
-                        <a href="#" class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Nature Italy</a>
-                        <a href="#" class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Nature Japan</a>
-                        <a href="#" class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Nature Middle East</a>
+                        <a
+                            class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Wo-r
+                            Articles Africa</a>
+                        <a
+                            class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Wo-r
+                            Articles China</a>
+                        <a
+                            class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Wo-r
+                            Articles India</a>
+                        <a
+                            class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Wo-r
+                            Articles Italy</a>
+                        <a
+                            class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Wo-r
+                            Articles Japan</a>
+                        <a
+                            class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Wo-r
+                            Articles Middle East</a>
                     </div>
                 </div>
-            </div>            
+            </div>
+            <div class="flex flex-col gap-5 w-full mt-7">
+                <div class="w-full border-t-4 py-2" style="border-color: black;"></div>
+                <div class="flex flex-row flex-wrap gap-5">
+                    <a
+                        class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Privacy
+                        Policy</a>
+                    <a
+                        class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Use
+                        of cookies</a>
+                    <a
+                        class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Your
+                        privacy choices/Manage cookies</a>
+                    <a
+                        class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Legal
+                        notice</a>
+                    <a
+                        class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Accessibility
+                        statement</a>
+                    <a
+                        class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Terms
+                        & Conditions</a>
+                    <a
+                        class="cursor-pointer underline underline-offset-[2px] decoration-1 w-fit hover:decoration-2 transition-all">Your
+                        US state privacy rights</a>
+                </div>
+            </div>
+            <div class="mt-10 flex flex-col w-full">
+                <a class="w-full py-3 text-3xl font-dancing font-black">Wo-r Aritcles</a>
+                <div>&copy; 2019-2024 Wo-r</div>
+            </div>
+        </div>
+    </div>
+    <!--chip overlay for light/dark mode and my github link-->
+    <div class="flex flex-col gap-1 fixed right-2 bottom-2">
+        <div
+            class="py-2 px-[7px] w-fit bg-black hover:bg-yellow-500 flex flex-col gap-[5px] justify-between items-center rounded-[15px] text-white shadow-xl select-none -mb-[60px] transition-all duration-75">
+            <a id="back-to-top" class="cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-[30px] fill-white" viewBox="0 -960 960 960">
+                    <path xmlns="http://www.w3.org/2000/svg"
+                        d="M480-528 296-344l-56-56 240-240 240 240-56 56-184-184Z" />
+                </svg>
+            </a>
+        </div>
+        <div
+            class="py-2 px-[7px] w-fit bg-black flex flex-col gap-[5px] justify-between items-center rounded-[15px] text-white shadow-xl select-none">
+            <a id="light-or-dark" class="cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-[30px] fill-white" viewBox="0 -960 960 960">
+                    <path
+                        d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm40-83q119-15 199.5-104.5T800-480q0-123-80.5-212.5T520-797v634Z" />
+                </svg>
+            </a>
+            <div class="bg-white py-[.5px] w-[1.5rem] my-[5px] rounded-full"></div>
+            <a href="https://github.com/wo-r">
+                <img class="rounded-full w-[25px] shadow-xl" src="https://avatars.githubusercontent.com/u/78428114?v=4">
+            </a>
         </div>
     </div>
 </body>
-<div class="modal-list">
-    <div class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+<div id="modals" class="modal-list">
+    <!--info modal-->
+    <div id="info-modal"
+        class="fixed inset-0 bg-black text-white bg-opacity-50 flex items-center justify-center z-50 hidden">
         <div class="bg-black p-6 rounded-lg shadow-lg w-48 md:w-96 lg:w-7/12">
-            <h2 class="text-xl font-semibold mb-4 text-white">Accessability Settings</h2>
-            <p class="text-white mb-6">Make the website easier to read with these accessability settings.</p>
-            <div class="my-10 flex flex-col gap-5">
-                <div class="option flex flex-row gap-2">
-                    <div class="toggle-option" setting="setfontsize"></div>
-                </div>
+            <h2 class="text-xl font-semibold mb-4 text-white">Welcome to my project!</h2>
+            <p class="text-white mb-6">Let me just explain a few things before you read this, as to provide you the best
+                reading environment.</p>
+            <div class="mb-10">
+                <ol class="list-decimal ml-5">
+                    <li>Any links outside of the article itself DO NOT WORK. (except for the little chip overlay at the
+                        bottom right of the screen, and the table of contents).</li>
+                    <li>This is imitates a research article blog (it is from the perspective of the writer).</li>
+                    <li>The website has NOT BEEN CODED to support different page sizes. It will really only work on
+                        Macbooks or Pc, not small laptops or phones. So don't read this there.</li>
+                </ol>
+                <div class="mt-5">With this out of the way, I hope you enjoy the work I put into this research.</div>
             </div>
-            <button
+            <button id="close"
                 class="bg-yellow-500 text-black px-4 py-2 rounded-md hover:bg-yellow-400 focus:outline-none focus:ring-2 focus:ring-yellow-500">Close</button>
         </div>
     </div>

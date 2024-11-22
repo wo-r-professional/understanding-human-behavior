@@ -158,8 +158,6 @@
         let target = $(this).text().trim().replace("\"", "").replace(" ", "-").replace("\"", "").replace(" ", "-").replace("\"", "").replace(" ", "-").replace("\"", "").replace(" ", "-").replace("\"", "").replace(" ", "-").replace("\"", "").replace(" ", "-").replace("\"", "").replace(" ", "-").replace("\"", "").replace(" ", "-").replace("\"", "").replace(" ", "-").replace("\"", "").replace(" ", "-").replace("\"", "").replace(" ", "-").replace("\"", "").replace(" ", "-").replace("\"", "").replace(" ", "-").replace("\"", "").replace(" ", "-").replace("\"", "").replace(" ", "-").toLowerCase()
         $(this).attr("id", target)
 
-        console.log($(this)[0].outerHTML.includes("h3"))
-
         if (!$(this)[0].outerHTML.includes("h3")) {
             $("#table-of-contents").append(`
                 
@@ -174,4 +172,36 @@
             `)
         }
     })
+}
+
+/** Check if the info modal as been shown yet */
+{
+    if (localStorage.getItem("info-modal") == null)
+        localStorage.setItem("info-modal", "show")
+
+    if (localStorage.getItem("info-modal") == "show") {
+        $("#info-modal").removeClass("hidden");
+
+        $("#info-modal #close").click(async function () {
+            $("#info-modal").addClass("hidden");
+            localStorage.setItem("info-modal", "hide")
+        })
+    }
+}
+
+/** Checks if you have started to scroll down the article, then show a 'back-to-top' button */
+{
+    $(window).scroll(function() {
+        if (($(this).scrollTop() > 820) == true) {
+            $('#back-to-top').parent().addClass("-mb-[0px]");
+        } else {
+            $('#back-to-top').parent().removeClass("-mb-[0px]");
+        }
+    });
+
+    // Smooth scroll to top when the button is clicked
+    $('#back-to-top').click(function() {
+        $('html, body').animate({scrollTop: 0}, 800);
+        return false;
+    });
 }
