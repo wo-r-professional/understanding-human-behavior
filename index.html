@@ -308,7 +308,7 @@
                         memory.</li>
                     <div class="my-5">
                         <video id="pavlovs-experiment" class="bg-white w-full h-[20rem]" controls>
-                            <source src="./src/res/pav-dogs-experiement.mp4" type="video/mp4">
+                            <source src="./src/res/pav-dogs-experiment.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                         <p class="text-sm">Pavlov's Dogs Experiment - Classical Conditioning</p>
@@ -319,7 +319,7 @@
                         future. Think of training a dog: they learn to sit when they get a treat.</li>
                     <div class="my-5">
                         <video id="skinners-experiment" class="bg-white w-full h-[20rem]" controls>
-                            <source src="./src/res/skinners-box-experiement.mp4" type="video/mp4">
+                            <source src="./src/res/skinners-box-experiment.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                         <p class="text-sm">Skinner's Box - Operant Conditioning</p>
@@ -330,7 +330,7 @@
                     </li>
                     <div class="my-5">
                         <video id="banduras-experiment" class="bg-white w-full h-[20rem]" controls>
-                            <source src="./src/res/banduras-doll-experiement.mp4" type="video/mp4">
+                            <source src="./src/res/banduras-doll-experiment.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                         <p class="text-sm">Bandura's Doll Experiment - Observational Learning</p>
@@ -645,7 +645,7 @@
                 <p class="mt-2 flex flex-row gap-1">
                     Key Figure: 
                     <span class="font-black">Ivan Pavlov</span> (Pavlov's Dogs experiment)
-                    <a href="#pavlovs-experiement">
+                    <a href="#pavlovs-experiment">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-[20px] fill-black hover:fill-yellow-500 cursor-pointer" viewBox="0 -960 960 960">
                             <path xmlns="http://www.w3.org/2000/svg" d="m332-452 70 70q19 19 19 47.5T402-287q-20 20-48 19.5T307-287L122-472q-20-20-20-48.5t20-48.5l185-185q20-19 47.5-19t47.5 19q19 20 19.5 48T402-659l-70 71h325q95 0 162 67t67 162v137q0 29-19.5 48.5T818-154q-28 0-48-19.5T750-222v-137q0-40-27-66.5T657-452H332Z"/>
                         </svg>
@@ -1207,6 +1207,10 @@
             <button id="close"
                 class="bg-yellow-500 text-black px-4 py-2 rounded-md hover:bg-yellow-400 focus:outline-none focus:ring-2 focus:ring-yellow-500">Close</button>
         </div>
+    </div>
+    <!--full screen image modal (not actually a modal but its easier if its here)-->
+    <div id="image-overlay" class="hidden flex fixed top-0 left-0 w-[100vw] h-[100vh] bg-black bg-opacity-50 items-center justify-center">
+        <img class="max-w-full max-h-full flex items-center object=contain p-10 pointer-events-none" src="">
     </div>
 </div>
 <script src="./src/script.js"></script>

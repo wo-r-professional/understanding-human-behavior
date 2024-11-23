@@ -205,3 +205,18 @@
         return false;
     });
 }
+
+/** Fullscreen images if they are clicked */
+{
+    $("img").each(async function () {
+        $(this).addClass("cursor-pointer")
+    })
+
+    $('img').click(async function() {
+        $('#image-overlay img').attr('src', $(this).attr('src'));
+        $('#image-overlay').removeClass("hidden");
+    });
+    $('#image-overlay').click(function() {
+        $('#image-overlay').addClass("hidden");
+    });
+}
